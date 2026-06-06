@@ -51,9 +51,60 @@ const rectContainsPoint = (rect, point, margin = 0.08) => {
   )
 }
 
+const getRectCorners = (rect, margin = 0) => {
+  const rotationRadians = ((rect.ccwRotationDegrees ?? 0) * Math.PI) / 180
+  const cos = Math.cos(rotationRadians)
+  const sin = Math.sin(rotationRadians)
+  const halfWidth = rect.width / 2 + margin
+  const halfHeight = rect.height / 2 + margin
+
+  return [
+    { x: -halfWidth, y: -halfHeight },
+    { x: halfWidth, y: -halfHeight },
+    { x: halfWidth, y: halfHeight },
+    { x: -halfWidth, y: halfHeight },
+  ].map((point) => ({
+    x: rect.center.x + point.x * cos - point.y * sin,
+    y: rect.center.y + point.x * sin + point.y * cos,
+  }))
+}
+
+const getSeparatingAxes = (corners) => [
+  {
+    x: corners[1].x - corners[0].x,
+    y: corners[1].y - corners[0].y,
+  },
+  {
+    x: corners[3].x - corners[0].x,
+    y: corners[3].y - corners[0].y,
+  },
+].map((axis) => {
+  const length = Math.hypot(axis.x, axis.y)
+  return { x: -axis.y / length, y: axis.x / length }
+})
+
+const getProjection = (corners, axis) => {
+  const values = corners.map((corner) => corner.x * axis.x + corner.y * axis.y)
+  return { min: Math.min(...values), max: Math.max(...values) }
+}
+
+const rectsOverlap = (a, b, margin = 0) => {
+  const aCorners = getRectCorners(a, margin)
+  const bCorners = getRectCorners(b, margin)
+  const axes = [...getSeparatingAxes(aCorners), ...getSeparatingAxes(bCorners)]
+
+  return axes.every((axis) => {
+    const aProjection = getProjection(aCorners, axis)
+    const bProjection = getProjection(bCorners, axis)
+    return (
+      aProjection.max >= bProjection.min && bProjection.max >= aProjection.min
+    )
+  })
+}
+
 const getPassiveObstacles = (srj) =>
   srj.obstacles.filter((obstacle) =>
-    obstacle.obstacleId?.startsWith("pcb_passive_overlay_"),
+    /^pcb_smtpad_[RC]\d+_pin[12]$/.test(obstacle.obstacleId ?? ""),
   )
 
 const getBgaPads = (srj) =>
@@ -73,7 +124,7 @@ const getObstacleStyle = (obstacle) => {
     }
   }
 
-  if (obstacle.obstacleId?.startsWith("pcb_passive_overlay_")) {
+  if (/^pcb_smtpad_[RC]\d+_pin[12]$/.test(obstacle.obstacleId ?? "")) {
     return {
       fill: "rgba(245, 158, 11, 0.72)",
       stroke: "#92400e",
@@ -152,17 +203,31 @@ test("passive random samples stay router-compatible", () => {
     const sizeKeys = new Set(
       passiveObstacles.map((obstacle) => `${obstacle.width}x${obstacle.height}`),
     )
+    const passiveComponentCount = new Set(
+      passiveObstacles.map((obstacle) => obstacle.componentId),
+    ).size
 
-    expect(passiveObstacles.length).toBeLessThan(bgaPads.length)
+    expect(passiveComponentCount).toBeLessThanOrEqual(
+      Math.ceil(bgaPads.length * 0.1),
+    )
     expect(srj.metadata.bgaLayer).not.toBe(srj.metadata.passiveLayer)
-    expect(sizeKeys.size).toBeGreaterThan(1)
+    if (passiveComponentCount > 2) {
+      expect(sizeKeys.size).toBeGreaterThan(1)
+    }
 
     for (const passive of passiveObstacles) {
       expect(Array.isArray(passive.connectedTo)).toBe(true)
       expect(passive.layers).toEqual([srj.metadata.passiveLayer])
       expect(
-        connectionPoints.some((point) => rectContainsPoint(passive, point)),
+        connectionPoints
+          .filter((point) => point.layer === passive.layers[0])
+          .some((point) => rectContainsPoint(passive, point)),
       ).toBe(false)
+
+      for (const otherPassive of passiveObstacles) {
+        if (passive.componentId === otherPassive.componentId) continue
+        expect(rectsOverlap(passive, otherPassive, 0.02)).toBe(false)
+      }
     }
   }
 })
