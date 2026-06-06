@@ -1,10 +1,11 @@
 export default () => (
-  <board width="10.76mm" height="10.76mm" routingDisabled>
+  <board width="10.76mm" height="10.76mm" routingDisabled schematicDisabled>
     <chip
       name="BGA"
       pcbX="0mm"
       pcbY="0mm"
       layer="bottom"
+      pinLabels={{pin001: "pin001", pin002: "pin002", pin003: "pin003", pin004: "pin004", pin005: "pin005", pin006: "pin006", pin007: "pin007", pin008: "pin008", pin009: "pin009", pin010: "pin010", pin011: "pin011", pin012: "pin012", pin013: "pin013", pin014: "pin014", pin015: "pin015", pin016: "pin016", pin017: "pin017", pin018: "pin018", pin019: "pin019", pin020: "pin020", pin021: "pin021", pin022: "pin022", pin023: "pin023", pin024: "pin024", pin025: "pin025", pin026: "pin026", pin027: "pin027", pin028: "pin028", pin029: "pin029", pin030: "pin030", pin031: "pin031", pin032: "pin032", pin033: "pin033", pin034: "pin034", pin035: "pin035", pin036: "pin036"}}
       footprint={
         <footprint>
         <smtpad
@@ -371,18 +372,6 @@ export default () => (
       }
     />
       <testpoint
-        name="TP011"
-        footprintVariant="pad"
-        padShape="rect"
-        pcbX="3.5mm"
-        pcbY="5.13mm"
-        width="0.85mm"
-        height="0.5mm"
-        layer="bottom"
-        
-        pcbPositionMode="relative_to_board_anchor"
-      />
-      <testpoint
         name="TP024"
         footprintVariant="pad"
         padShape="rect"
@@ -398,20 +387,8 @@ export default () => (
         name="TP025"
         footprintVariant="pad"
         padShape="rect"
-        pcbX="5.13mm"
-        pcbY="2.1mm"
-        width="0.5mm"
-        height="0.85mm"
-        layer="bottom"
-        
-        pcbPositionMode="relative_to_board_anchor"
-      />
-      <testpoint
-        name="TP025"
-        footprintVariant="pad"
-        padShape="rect"
         pcbX="3.5mm"
-        pcbY="-5.13mm"
+        pcbY="5.13mm"
         width="0.85mm"
         height="0.5mm"
         layer="bottom"
@@ -491,18 +468,6 @@ export default () => (
         pcbPositionMode="relative_to_board_anchor"
       />
       <testpoint
-        name="TP033"
-        footprintVariant="pad"
-        padShape="rect"
-        pcbX="-5.13mm"
-        pcbY="0.7mm"
-        width="0.5mm"
-        height="0.85mm"
-        layer="bottom"
-        
-        pcbPositionMode="relative_to_board_anchor"
-      />
-      <testpoint
         name="TP035"
         footprintVariant="pad"
         padShape="rect"
@@ -526,10 +491,27 @@ export default () => (
         
         pcbPositionMode="relative_to_board_anchor"
       />
-      <trace from=".BGA > .pin025" to=".TP011 > .pin1" />
-      <trace from=".BGA > .pin011" to=".TP012 > .pin1" />
-      <trace from=".BGA > .pin033" to=".TP022 > .pin1" />
+      <trace from=".BGA > .pin024" to=".TP024 > .pin1" />
+      <trace from=".BGA > .pin025" to=".TP025 > .pin1" />
+      <trace from=".BGA > .pin026" to=".TP026 > .pin1" />
+      <trace from=".BGA > .pin027" to=".TP027 > .pin1" />
+      <trace from=".BGA > .pin028" to=".TP028 > .pin1" />
+      <trace from=".BGA > .pin029" to=".TP029 > .pin1" />
+      <trace from=".BGA > .pin032" to=".TP032 > .pin1" />
+      <trace from=".BGA > .pin033" to=".TP033 > .pin1" />
+      <trace from=".BGA > .pin035" to=".TP035 > .pin1" />
+      <trace from=".BGA > .pin036" to=".TP036 > .pin1" />
       <resistor name="R001" footprint="0603" pcbX="-0.568mm" pcbY="0.873mm" pcbRotation={90} layer="top" pcbPositionMode="relative_to_board_anchor" resistance="10k" />
       <capacitor name="C002" footprint="0402" pcbX="2.255mm" pcbY="1.991mm" pcbRotation={0} layer="top" pcbPositionMode="relative_to_board_anchor" capacitance="1uF" />
+      <resistor name="R003" footprint="0402" pcbX="2.258mm" pcbY="-2.217mm" pcbRotation={0} layer="top" pcbPositionMode="relative_to_board_anchor" resistance="1k" />
+      <capacitor name="C004" footprint="0402" pcbX="-1.703mm" pcbY="-2.287mm" pcbRotation={0} layer="top" pcbPositionMode="relative_to_board_anchor" capacitance="4.7uF" />
+      <trace from=".BGA > .pin009" to=".R001 > .pin1" />
+      <trace from=".R001 > .pin2" to=".TP035 > .pin1" />
+      <trace from=".BGA > .pin012" to=".C002 > .pin1" />
+      <trace from=".C002 > .pin2" to=".TP033 > .pin1" />
+      <trace from=".BGA > .pin035" to=".R003 > .pin1" />
+      <trace from=".R003 > .pin2" to=".TP036 > .pin1" />
+      <trace from=".BGA > .pin026" to=".C004 > .pin1" />
+      <trace from=".C004 > .pin2" to=".TP035 > .pin1" />
   </board>
 )

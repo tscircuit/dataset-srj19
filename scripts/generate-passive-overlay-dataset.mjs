@@ -32,6 +32,18 @@ const isGeneratedPassiveObstacle = (obstacle) =>
   obstacle.componentId?.startsWith("passive_component_") ||
   /^[RC]\d+$/.test(obstacle.componentId ?? "")
 
+const isBgaBreakoutConnection = (connection) => {
+  const pointIds = (connection.pointsToConnect ?? []).map(
+    (point) => point.pointId ?? "",
+  )
+
+  return (
+    pointIds.length === 2 &&
+    pointIds.some((pointId) => pointId.startsWith("bga_pin_")) &&
+    pointIds.some((pointId) => pointId.startsWith("io_pin_"))
+  )
+}
+
 const getOppositeLayer = (layer) => (layer === "top" ? "bottom" : "top")
 
 const getSampleIndex = (sampleName) => Number(sampleName.replace("sample", ""))
@@ -250,6 +262,7 @@ const stripExistingPassiveOverlay = (srj) => {
   srj.obstacles = (srj.obstacles ?? []).filter(
     (obstacle) => !isGeneratedPassiveObstacle(obstacle),
   )
+  srj.connections = (srj.connections ?? []).filter(isBgaBreakoutConnection)
 }
 
 const formatMm = (value) => `${Number(value.toFixed(3))}mm`
@@ -265,17 +278,19 @@ const getPointByPortId = (srj, portId) =>
   getConnectionPoints(srj).find((point) => point.pcb_port_id === portId)
 
 const getPadName = (srj, obstacle) => {
+  const obstaclePinNumber = obstacle.obstacleId?.match(/pin_(\d+)$/)?.[1]
+  if (obstaclePinNumber) return `pin${obstaclePinNumber}`
+
   const portId = getPortNameFromObstacle(obstacle)
   const point = getPointByPortId(srj, portId)
 
   if (point?.pointId) return getPinNameFromPointId(point.pointId)
 
-  const fallbackPinNumber = obstacle.obstacleId?.match(/pin_(\d+)$/)?.[1]
-  return fallbackPinNumber ? `pin${fallbackPinNumber}` : "pin"
+  return "pin"
 }
 
-const getFootprintPadTsx = (srj, obstacle) => {
-  const portName = getPadName(srj, obstacle)
+const getFootprintPadTsx = (srj, obstacle, portNameOverride) => {
+  const portName = portNameOverride ?? getPadName(srj, obstacle)
   const rotation = obstacle.ccwRotationDegrees ?? 0
 
   return `        <smtpad
@@ -299,9 +314,12 @@ const getPassiveFootprintName = (passive) => {
   return "0805"
 }
 
+const getPassiveComponentName = (passiveIndex) =>
+  `${passiveIndex % 2 === 0 ? "R" : "C"}${String(passiveIndex + 1).padStart(3, "0")}`
+
 const getPassiveTsx = (passive, passiveIndex) => {
-  const componentNumber = String(passiveIndex + 1).padStart(3, "0")
-  const commonProps = `name="${passiveIndex % 2 === 0 ? "R" : "C"}${componentNumber}" footprint="${getPassiveFootprintName(passive)}" pcbX="${formatMm(passive.center.x)}" pcbY="${formatMm(passive.center.y)}" pcbRotation={${passive.ccwRotationDegrees ?? 0}} layer="${passive.layers[0]}" pcbPositionMode="relative_to_board_anchor"`
+  const componentName = getPassiveComponentName(passiveIndex)
+  const commonProps = `name="${componentName}" footprint="${getPassiveFootprintName(passive)}" pcbX="${formatMm(passive.center.x)}" pcbY="${formatMm(passive.center.y)}" pcbRotation={${passive.ccwRotationDegrees ?? 0}} layer="${passive.layers[0]}" pcbPositionMode="relative_to_board_anchor"`
 
   if (passiveIndex % 2 === 0) {
     const resistanceValues = ["10k", "4.7k", "1k", "100"]
@@ -331,13 +349,43 @@ const getIoTestpointTsx = (srj, ioPad) => {
       />`
 }
 
-const getTraceTsx = (connection) => {
-  const [startPoint, endPoint] = connection.pointsToConnect
-  const startPort = getPinNameFromPointId(startPoint.pointId)
-  const endNumber = getPinNameFromPointId(endPoint.pointId).replace(/^pin/, "")
+const getBreakoutTraceTsx = (srj, bgaPad, ioPad, bgaPortName) => {
+  const ioNumber = getPadName(srj, ioPad).replace(/^pin/, "")
 
-  return `      <trace from=".BGA > .${startPort}" to=".TP${endNumber} > .pin1" />`
+  return `      <trace from=".BGA > .${bgaPortName}" to=".TP${ioNumber} > .pin1" />`
 }
+
+const getDistance = (a, b) => Math.hypot(a.center.x - b.center.x, a.center.y - b.center.y)
+
+const getNearestPad = (passive, pads, offset) =>
+  [...pads]
+    .sort((a, b) => getDistance(passive, a) - getDistance(passive, b))[offset % pads.length]
+
+const getPassiveTraceTsx = ({
+  srj,
+  passive,
+  passiveIndex,
+  bgaPads,
+  ioPads,
+  bgaPadNameByObstacle,
+}) => {
+  const passiveComponentName = getPassiveComponentName(passiveIndex)
+  const bgaPad = getNearestPad(passive, bgaPads, passiveIndex)
+  const ioPad = getNearestPad(passive, ioPads, passiveIndex + 1)
+  const bgaPortName = bgaPadNameByObstacle.get(bgaPad) ?? getPadName(srj, bgaPad)
+  const ioNumber = getPadName(srj, ioPad).replace(/^pin/, "")
+
+  return `      <trace from=".BGA > .${bgaPortName}" to=".${passiveComponentName} > .pin1" />
+      <trace from=".${passiveComponentName} > .pin2" to=".TP${ioNumber} > .pin1" />`
+}
+
+const getBgaPinLabelsTsx = (bgaPads) =>
+  `{${bgaPads
+    .map((_, padIndex) => {
+      const pinName = `pin${String(padIndex + 1).padStart(3, "0")}`
+      return `${pinName}: "${pinName}"`
+    })
+    .join(", ")}}`
 
 const createCircuitTsx = (srj, sampleName) => {
   const bgaPads = srj.obstacles
@@ -351,23 +399,50 @@ const createCircuitTsx = (srj, sampleName) => {
     .filter((obstacle) => obstacle.obstacleId?.startsWith("pcb_smtpad_io_"))
     .sort((a, b) => getPadName(srj, a).localeCompare(getPadName(srj, b)))
   const passiveObstacles = getPassiveObstacles(srj)
+  const bgaPadNameByObstacle = new Map(
+    bgaPads.map((pad, padIndex) => [
+      pad,
+      `pin${String(padIndex + 1).padStart(3, "0")}`,
+    ]),
+  )
+  const ioPadByName = new Map(ioPads.map((pad) => [getPadName(srj, pad), pad]))
+  const breakoutTraceTsx = bgaPads
+    .map((bgaPad) => {
+      const bgaPortName = bgaPadNameByObstacle.get(bgaPad) ?? getPadName(srj, bgaPad)
+      const ioPad = ioPadByName.get(bgaPortName)
+      return ioPad ? getBreakoutTraceTsx(srj, bgaPad, ioPad, bgaPortName) : null
+    })
+    .filter(Boolean)
 
   return `export default () => (
-  <board width="${formatMm(srj.bounds.maxX - srj.bounds.minX)}" height="${formatMm(srj.bounds.maxY - srj.bounds.minY)}" routingDisabled>
+  <board width="${formatMm(srj.bounds.maxX - srj.bounds.minX)}" height="${formatMm(srj.bounds.maxY - srj.bounds.minY)}" routingDisabled schematicDisabled>
     <chip
       name="BGA"
       pcbX="0mm"
       pcbY="0mm"
       layer="${srj.metadata.bgaLayer}"
+      pinLabels={${getBgaPinLabelsTsx(bgaPads)}}
       footprint={
         <footprint>
-${bgaPads.map((pad) => getFootprintPadTsx(srj, pad)).join("\n")}
+${bgaPads.map((pad) => getFootprintPadTsx(srj, pad, bgaPadNameByObstacle.get(pad))).join("\n")}
         </footprint>
       }
     />
 ${ioPads.map((pad) => getIoTestpointTsx(srj, pad)).join("\n")}
-${srj.connections.map(getTraceTsx).join("\n")}
+${breakoutTraceTsx.join("\n")}
 ${passiveObstacles.map(getPassiveTsx).join("\n")}
+${passiveObstacles
+  .map((passive, passiveIndex) =>
+    getPassiveTraceTsx({
+      srj,
+      passive,
+      passiveIndex,
+      bgaPads,
+      ioPads,
+      bgaPadNameByObstacle,
+    }),
+  )
+  .join("\n")}
   </board>
 )
 `
@@ -394,8 +469,8 @@ const createTsxSeedSrj = (srj, sampleName) => {
   const passiveCount = Math.max(
     1,
     Math.min(
-      Math.ceil(bgaPads.length * 0.1),
-      Math.round(bgaPads.length * randomBetween(rng, 0.03, 0.08)),
+      Math.ceil(bgaPads.length * 0.14),
+      Math.round(bgaPads.length * randomBetween(rng, 0.05, 0.12)),
     ),
   )
   const passiveObstacles = makeClearPassiveObstacles({
@@ -414,7 +489,7 @@ const createTsxSeedSrj = (srj, sampleName) => {
     passiveLayer,
     passiveOverlayCount: passiveObstacles.length,
     passiveOverlayRule:
-      "Passive component keepouts are placed as a deterministic random subset around the BGA footprint on the opposite PCB layer, with varied sizes, orientations, and offsets.",
+      "Passive components are placed as a deterministic random subset around the BGA footprint on the opposite PCB layer, with varied sizes, orientations, offsets, and routed connections.",
   }
 
   return srj
@@ -513,7 +588,6 @@ const normalizeSrjFromCircuitJson = ({
       obstacle.obstacleId = `pcb_smtpad_${sourceComponentName}_${pinNumber}`
       obstacle.componentId = sourceComponentName
       obstacle.layers = [passiveLayer]
-      obstacle.connectedTo = []
       passiveComponentNames.add(sourceComponentName)
       passivePadCount += 1
     }
@@ -523,7 +597,16 @@ const normalizeSrjFromCircuitJson = ({
     simpleRouteJson.connections ?? []
   ).entries()) {
     const connectionNumber = String(connectionIndex + 1).padStart(3, "0")
-    connection.name = `bga_conn_${connectionNumber}`
+    const connectsPassive = (connection.pointsToConnect ?? []).some((point) => {
+      const { sourceComponent } = getComponentInfoForPcbPort({
+        pcbPortId: point.pcb_port_id,
+        pcbPortById,
+        sourcePortById,
+        sourceComponentById,
+      })
+      return /^[RC]\d+$/.test(sourceComponent?.name ?? "")
+    })
+    connection.name = `${connectsPassive ? "passive_conn" : "bga_conn"}_${connectionNumber}`
     connection.rootConnectionName = connection.name
 
     for (const point of connection.pointsToConnect ?? []) {
@@ -534,14 +617,17 @@ const normalizeSrjFromCircuitJson = ({
         sourceComponentById,
       })
 
-      point.layer = bgaLayer
-
       if (sourceComponent?.name === "BGA") {
         const pinNumber = padHintToPaddedNumber(sourcePort)
+        point.layer = bgaLayer
         point.pointId = `bga_pin_${pinNumber}`
       } else if (sourceComponent?.name?.startsWith("TP")) {
         const ioNumber = sourceComponent.name.replace(/^TP/, "").padStart(3, "0")
+        point.layer = bgaLayer
         point.pointId = `io_pin_${ioNumber}`
+      } else if (/^[RC]\d+$/.test(sourceComponent?.name ?? "")) {
+        point.layer = passiveLayer
+        point.pointId = `${sourceComponent.name}_${sourcePort?.name ?? "pin"}`
       }
     }
   }
@@ -555,7 +641,7 @@ const normalizeSrjFromCircuitJson = ({
     passiveOverlayCount: passivePadCount,
     generatedFrom: "tsx-circuit-json-core-simple-route",
     passiveOverlayRule:
-      "Passive components are generated in TSX as real resistors/capacitors, rendered to circuit JSON with tscircuit, then converted to simple-route JSON using @tscircuit/core.",
+      "Passive components are generated in TSX as real routed resistors/capacitors, rendered to circuit JSON with tscircuit, then converted to simple-route JSON using @tscircuit/core.",
   }
 
   return simpleRouteJson

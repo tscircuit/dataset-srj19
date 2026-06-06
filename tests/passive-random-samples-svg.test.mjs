@@ -206,21 +206,29 @@ test("passive random samples stay router-compatible", () => {
     const passiveComponentCount = new Set(
       passiveObstacles.map((obstacle) => obstacle.componentId),
     ).size
+    const passiveConnectionPoints = connectionPoints.filter((point) =>
+      /^[RC]\d+_pin[12]$/.test(point.pointId ?? ""),
+    )
 
     expect(passiveComponentCount).toBeLessThanOrEqual(
-      Math.ceil(bgaPads.length * 0.1),
+      Math.ceil(bgaPads.length * 0.14),
     )
     expect(srj.metadata.bgaLayer).not.toBe(srj.metadata.passiveLayer)
+    expect(passiveConnectionPoints.length).toBeGreaterThanOrEqual(
+      passiveComponentCount * 2,
+    )
     if (passiveComponentCount > 2) {
       expect(sizeKeys.size).toBeGreaterThan(1)
     }
 
     for (const passive of passiveObstacles) {
       expect(Array.isArray(passive.connectedTo)).toBe(true)
+      expect(passive.connectedTo.length).toBeGreaterThan(0)
       expect(passive.layers).toEqual([srj.metadata.passiveLayer])
       expect(
         connectionPoints
           .filter((point) => point.layer === passive.layers[0])
+          .filter((point) => !point.pointId?.startsWith(`${passive.componentId}_`))
           .some((point) => rectContainsPoint(passive, point)),
       ).toBe(false)
 

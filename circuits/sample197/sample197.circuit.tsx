@@ -1,45 +1,16 @@
 export default () => (
-  <board width="10.76mm" height="10.76mm" routingDisabled>
+  <board width="10.76mm" height="10.76mm" routingDisabled schematicDisabled>
     <chip
       name="BGA"
       pcbX="0mm"
       pcbY="0mm"
       layer="bottom"
+      pinLabels={{pin001: "pin001", pin002: "pin002", pin003: "pin003", pin004: "pin004", pin005: "pin005", pin006: "pin006", pin007: "pin007", pin008: "pin008", pin009: "pin009", pin010: "pin010", pin011: "pin011", pin012: "pin012", pin013: "pin013", pin014: "pin014", pin015: "pin015", pin016: "pin016", pin017: "pin017", pin018: "pin018", pin019: "pin019", pin020: "pin020", pin021: "pin021", pin022: "pin022", pin023: "pin023", pin024: "pin024", pin025: "pin025", pin026: "pin026", pin027: "pin027", pin028: "pin028", pin029: "pin029", pin030: "pin030", pin031: "pin031", pin032: "pin032", pin033: "pin033", pin034: "pin034", pin035: "pin035", pin036: "pin036"}}
       footprint={
         <footprint>
         <smtpad
-          portHints={["pin006"]}
+          portHints={["pin001"]}
           pcbX="-2mm"
-          pcbY="2mm"
-          width="0.36mm"
-          height="0.36mm"
-          shape="rect"
-          layer="bottom"
-          
-        />
-        <smtpad
-          portHints={["pin005"]}
-          pcbX="-1.2mm"
-          pcbY="2mm"
-          width="0.36mm"
-          height="0.36mm"
-          shape="rect"
-          layer="bottom"
-          
-        />
-        <smtpad
-          portHints={["pin004"]}
-          pcbX="-0.4mm"
-          pcbY="2mm"
-          width="0.36mm"
-          height="0.36mm"
-          shape="rect"
-          layer="bottom"
-          
-        />
-        <smtpad
-          portHints={["pin003"]}
-          pcbX="0.4mm"
           pcbY="2mm"
           width="0.36mm"
           height="0.36mm"
@@ -49,6 +20,36 @@ export default () => (
         />
         <smtpad
           portHints={["pin002"]}
+          pcbX="-1.2mm"
+          pcbY="2mm"
+          width="0.36mm"
+          height="0.36mm"
+          shape="rect"
+          layer="bottom"
+          
+        />
+        <smtpad
+          portHints={["pin003"]}
+          pcbX="-0.4mm"
+          pcbY="2mm"
+          width="0.36mm"
+          height="0.36mm"
+          shape="rect"
+          layer="bottom"
+          
+        />
+        <smtpad
+          portHints={["pin004"]}
+          pcbX="0.4mm"
+          pcbY="2mm"
+          width="0.36mm"
+          height="0.36mm"
+          shape="rect"
+          layer="bottom"
+          
+        />
+        <smtpad
+          portHints={["pin005"]}
           pcbX="1.2mm"
           pcbY="2mm"
           width="0.36mm"
@@ -58,7 +59,7 @@ export default () => (
           
         />
         <smtpad
-          portHints={["pin001"]}
+          portHints={["pin006"]}
           pcbX="2mm"
           pcbY="2mm"
           width="0.36mm"
@@ -68,38 +69,8 @@ export default () => (
           
         />
         <smtpad
-          portHints={["pin012"]}
+          portHints={["pin007"]}
           pcbX="-2mm"
-          pcbY="1.2mm"
-          width="0.36mm"
-          height="0.36mm"
-          shape="rect"
-          layer="bottom"
-          
-        />
-        <smtpad
-          portHints={["pin011"]}
-          pcbX="-1.2mm"
-          pcbY="1.2mm"
-          width="0.36mm"
-          height="0.36mm"
-          shape="rect"
-          layer="bottom"
-          
-        />
-        <smtpad
-          portHints={["pin010"]}
-          pcbX="-0.4mm"
-          pcbY="1.2mm"
-          width="0.36mm"
-          height="0.36mm"
-          shape="rect"
-          layer="bottom"
-          
-        />
-        <smtpad
-          portHints={["pin009"]}
-          pcbX="0.4mm"
           pcbY="1.2mm"
           width="0.36mm"
           height="0.36mm"
@@ -109,6 +80,36 @@ export default () => (
         />
         <smtpad
           portHints={["pin008"]}
+          pcbX="-1.2mm"
+          pcbY="1.2mm"
+          width="0.36mm"
+          height="0.36mm"
+          shape="rect"
+          layer="bottom"
+          
+        />
+        <smtpad
+          portHints={["pin009"]}
+          pcbX="-0.4mm"
+          pcbY="1.2mm"
+          width="0.36mm"
+          height="0.36mm"
+          shape="rect"
+          layer="bottom"
+          
+        />
+        <smtpad
+          portHints={["pin010"]}
+          pcbX="0.4mm"
+          pcbY="1.2mm"
+          width="0.36mm"
+          height="0.36mm"
+          shape="rect"
+          layer="bottom"
+          
+        />
+        <smtpad
+          portHints={["pin011"]}
           pcbX="1.2mm"
           pcbY="1.2mm"
           width="0.36mm"
@@ -118,7 +119,7 @@ export default () => (
           
         />
         <smtpad
-          portHints={["pin007"]}
+          portHints={["pin012"]}
           pcbX="2mm"
           pcbY="1.2mm"
           width="0.36mm"
@@ -128,38 +129,8 @@ export default () => (
           
         />
         <smtpad
-          portHints={["pin018"]}
+          portHints={["pin013"]}
           pcbX="-2mm"
-          pcbY="0.4mm"
-          width="0.36mm"
-          height="0.36mm"
-          shape="rect"
-          layer="bottom"
-          
-        />
-        <smtpad
-          portHints={["pin017"]}
-          pcbX="-1.2mm"
-          pcbY="0.4mm"
-          width="0.36mm"
-          height="0.36mm"
-          shape="rect"
-          layer="bottom"
-          
-        />
-        <smtpad
-          portHints={["pin016"]}
-          pcbX="-0.4mm"
-          pcbY="0.4mm"
-          width="0.36mm"
-          height="0.36mm"
-          shape="rect"
-          layer="bottom"
-          
-        />
-        <smtpad
-          portHints={["pin015"]}
-          pcbX="0.4mm"
           pcbY="0.4mm"
           width="0.36mm"
           height="0.36mm"
@@ -169,6 +140,36 @@ export default () => (
         />
         <smtpad
           portHints={["pin014"]}
+          pcbX="-1.2mm"
+          pcbY="0.4mm"
+          width="0.36mm"
+          height="0.36mm"
+          shape="rect"
+          layer="bottom"
+          
+        />
+        <smtpad
+          portHints={["pin015"]}
+          pcbX="-0.4mm"
+          pcbY="0.4mm"
+          width="0.36mm"
+          height="0.36mm"
+          shape="rect"
+          layer="bottom"
+          
+        />
+        <smtpad
+          portHints={["pin016"]}
+          pcbX="0.4mm"
+          pcbY="0.4mm"
+          width="0.36mm"
+          height="0.36mm"
+          shape="rect"
+          layer="bottom"
+          
+        />
+        <smtpad
+          portHints={["pin017"]}
           pcbX="1.2mm"
           pcbY="0.4mm"
           width="0.36mm"
@@ -178,7 +179,7 @@ export default () => (
           
         />
         <smtpad
-          portHints={["pin013"]}
+          portHints={["pin018"]}
           pcbX="2mm"
           pcbY="0.4mm"
           width="0.36mm"
@@ -188,38 +189,8 @@ export default () => (
           
         />
         <smtpad
-          portHints={["pin024"]}
+          portHints={["pin019"]}
           pcbX="-2mm"
-          pcbY="-0.4mm"
-          width="0.36mm"
-          height="0.36mm"
-          shape="rect"
-          layer="bottom"
-          
-        />
-        <smtpad
-          portHints={["pin023"]}
-          pcbX="-1.2mm"
-          pcbY="-0.4mm"
-          width="0.36mm"
-          height="0.36mm"
-          shape="rect"
-          layer="bottom"
-          
-        />
-        <smtpad
-          portHints={["pin022"]}
-          pcbX="-0.4mm"
-          pcbY="-0.4mm"
-          width="0.36mm"
-          height="0.36mm"
-          shape="rect"
-          layer="bottom"
-          
-        />
-        <smtpad
-          portHints={["pin021"]}
-          pcbX="0.4mm"
           pcbY="-0.4mm"
           width="0.36mm"
           height="0.36mm"
@@ -229,6 +200,36 @@ export default () => (
         />
         <smtpad
           portHints={["pin020"]}
+          pcbX="-1.2mm"
+          pcbY="-0.4mm"
+          width="0.36mm"
+          height="0.36mm"
+          shape="rect"
+          layer="bottom"
+          
+        />
+        <smtpad
+          portHints={["pin021"]}
+          pcbX="-0.4mm"
+          pcbY="-0.4mm"
+          width="0.36mm"
+          height="0.36mm"
+          shape="rect"
+          layer="bottom"
+          
+        />
+        <smtpad
+          portHints={["pin022"]}
+          pcbX="0.4mm"
+          pcbY="-0.4mm"
+          width="0.36mm"
+          height="0.36mm"
+          shape="rect"
+          layer="bottom"
+          
+        />
+        <smtpad
+          portHints={["pin023"]}
           pcbX="1.2mm"
           pcbY="-0.4mm"
           width="0.36mm"
@@ -238,7 +239,7 @@ export default () => (
           
         />
         <smtpad
-          portHints={["pin019"]}
+          portHints={["pin024"]}
           pcbX="2mm"
           pcbY="-0.4mm"
           width="0.36mm"
@@ -248,38 +249,8 @@ export default () => (
           
         />
         <smtpad
-          portHints={["pin030"]}
+          portHints={["pin025"]}
           pcbX="-2mm"
-          pcbY="-1.2mm"
-          width="0.36mm"
-          height="0.36mm"
-          shape="rect"
-          layer="bottom"
-          
-        />
-        <smtpad
-          portHints={["pin029"]}
-          pcbX="-1.2mm"
-          pcbY="-1.2mm"
-          width="0.36mm"
-          height="0.36mm"
-          shape="rect"
-          layer="bottom"
-          
-        />
-        <smtpad
-          portHints={["pin028"]}
-          pcbX="-0.4mm"
-          pcbY="-1.2mm"
-          width="0.36mm"
-          height="0.36mm"
-          shape="rect"
-          layer="bottom"
-          
-        />
-        <smtpad
-          portHints={["pin027"]}
-          pcbX="0.4mm"
           pcbY="-1.2mm"
           width="0.36mm"
           height="0.36mm"
@@ -289,6 +260,36 @@ export default () => (
         />
         <smtpad
           portHints={["pin026"]}
+          pcbX="-1.2mm"
+          pcbY="-1.2mm"
+          width="0.36mm"
+          height="0.36mm"
+          shape="rect"
+          layer="bottom"
+          
+        />
+        <smtpad
+          portHints={["pin027"]}
+          pcbX="-0.4mm"
+          pcbY="-1.2mm"
+          width="0.36mm"
+          height="0.36mm"
+          shape="rect"
+          layer="bottom"
+          
+        />
+        <smtpad
+          portHints={["pin028"]}
+          pcbX="0.4mm"
+          pcbY="-1.2mm"
+          width="0.36mm"
+          height="0.36mm"
+          shape="rect"
+          layer="bottom"
+          
+        />
+        <smtpad
+          portHints={["pin029"]}
           pcbX="1.2mm"
           pcbY="-1.2mm"
           width="0.36mm"
@@ -298,7 +299,7 @@ export default () => (
           
         />
         <smtpad
-          portHints={["pin025"]}
+          portHints={["pin030"]}
           pcbX="2mm"
           pcbY="-1.2mm"
           width="0.36mm"
@@ -308,7 +309,7 @@ export default () => (
           
         />
         <smtpad
-          portHints={["pin036"]}
+          portHints={["pin031"]}
           pcbX="-2mm"
           pcbY="-2mm"
           width="0.36mm"
@@ -318,7 +319,7 @@ export default () => (
           
         />
         <smtpad
-          portHints={["pin035"]}
+          portHints={["pin032"]}
           pcbX="-1.2mm"
           pcbY="-2mm"
           width="0.36mm"
@@ -328,7 +329,7 @@ export default () => (
           
         />
         <smtpad
-          portHints={["pin034"]}
+          portHints={["pin033"]}
           pcbX="-0.4mm"
           pcbY="-2mm"
           width="0.36mm"
@@ -338,7 +339,7 @@ export default () => (
           
         />
         <smtpad
-          portHints={["pin033"]}
+          portHints={["pin034"]}
           pcbX="0.4mm"
           pcbY="-2mm"
           width="0.36mm"
@@ -348,7 +349,7 @@ export default () => (
           
         />
         <smtpad
-          portHints={["pin032"]}
+          portHints={["pin035"]}
           pcbX="1.2mm"
           pcbY="-2mm"
           width="0.36mm"
@@ -358,7 +359,7 @@ export default () => (
           
         />
         <smtpad
-          portHints={["pin031"]}
+          portHints={["pin036"]}
           pcbX="2mm"
           pcbY="-2mm"
           width="0.36mm"
@@ -374,18 +375,6 @@ export default () => (
         name="TP001"
         footprintVariant="pad"
         padShape="rect"
-        pcbX="3.5mm"
-        pcbY="-5.13mm"
-        width="0.85mm"
-        height="0.5mm"
-        layer="bottom"
-        
-        pcbPositionMode="relative_to_board_anchor"
-      />
-      <testpoint
-        name="TP002"
-        footprintVariant="pad"
-        padShape="rect"
         pcbX="-2.1mm"
         pcbY="-5.13mm"
         width="0.85mm"
@@ -395,22 +384,10 @@ export default () => (
         pcbPositionMode="relative_to_board_anchor"
       />
       <testpoint
-        name="TP008"
-        footprintVariant="pad"
-        padShape="rect"
-        pcbX="-5.13mm"
-        pcbY="2.1mm"
-        width="0.5mm"
-        height="0.85mm"
-        layer="bottom"
-        
-        pcbPositionMode="relative_to_board_anchor"
-      />
-      <testpoint
         name="TP009"
         footprintVariant="pad"
         padShape="rect"
-        pcbX="-3.5mm"
+        pcbX="3.5mm"
         pcbY="-5.13mm"
         width="0.85mm"
         height="0.5mm"
@@ -434,10 +411,10 @@ export default () => (
         name="TP016"
         footprintVariant="pad"
         padShape="rect"
-        pcbX="-3.5mm"
-        pcbY="5.13mm"
-        width="0.85mm"
-        height="0.5mm"
+        pcbX="5.13mm"
+        pcbY="3.5mm"
+        width="0.5mm"
+        height="0.85mm"
         layer="bottom"
         
         pcbPositionMode="relative_to_board_anchor"
@@ -458,10 +435,10 @@ export default () => (
         name="TP022"
         footprintVariant="pad"
         padShape="rect"
-        pcbX="5.13mm"
-        pcbY="3.5mm"
-        width="0.5mm"
-        height="0.85mm"
+        pcbX="-3.5mm"
+        pcbY="-5.13mm"
+        width="0.85mm"
+        height="0.5mm"
         layer="bottom"
         
         pcbPositionMode="relative_to_board_anchor"
@@ -482,22 +459,10 @@ export default () => (
         name="TP025"
         footprintVariant="pad"
         padShape="rect"
-        pcbX="5.13mm"
-        pcbY="0.7mm"
+        pcbX="-5.13mm"
+        pcbY="2.1mm"
         width="0.5mm"
         height="0.85mm"
-        layer="bottom"
-        
-        pcbPositionMode="relative_to_board_anchor"
-      />
-      <testpoint
-        name="TP025"
-        footprintVariant="pad"
-        padShape="rect"
-        pcbX="0.7mm"
-        pcbY="5.13mm"
-        width="0.85mm"
-        height="0.5mm"
         layer="bottom"
         
         pcbPositionMode="relative_to_board_anchor"
@@ -542,22 +507,10 @@ export default () => (
         name="TP032"
         footprintVariant="pad"
         padShape="rect"
-        pcbX="-0.7mm"
+        pcbX="-3.5mm"
         pcbY="5.13mm"
         width="0.85mm"
         height="0.5mm"
-        layer="bottom"
-        
-        pcbPositionMode="relative_to_board_anchor"
-      />
-      <testpoint
-        name="TP032"
-        footprintVariant="pad"
-        padShape="rect"
-        pcbX="5.13mm"
-        pcbY="-3.5mm"
-        width="0.5mm"
-        height="0.85mm"
         layer="bottom"
         
         pcbPositionMode="relative_to_board_anchor"
@@ -586,17 +539,28 @@ export default () => (
         
         pcbPositionMode="relative_to_board_anchor"
       />
-      <trace from=".BGA > .pin009" to=".TP001 > .pin1" />
-      <trace from=".BGA > .pin001" to=".TP002 > .pin1" />
-      <trace from=".BGA > .pin025" to=".TP008 > .pin1" />
-      <trace from=".BGA > .pin022" to=".TP009 > .pin1" />
+      <trace from=".BGA > .pin001" to=".TP001 > .pin1" />
+      <trace from=".BGA > .pin009" to=".TP009 > .pin1" />
       <trace from=".BGA > .pin012" to=".TP012 > .pin1" />
-      <trace from=".BGA > .pin008" to=".TP013 > .pin1" />
-      <trace from=".BGA > .pin032" to=".TP016 > .pin1" />
+      <trace from=".BGA > .pin016" to=".TP016 > .pin1" />
       <trace from=".BGA > .pin017" to=".TP017 > .pin1" />
-      <trace from=".BGA > .pin016" to=".TP022 > .pin1" />
-      <trace from=".BGA > .pin002" to=".TP023 > .pin1" />
+      <trace from=".BGA > .pin022" to=".TP022 > .pin1" />
+      <trace from=".BGA > .pin024" to=".TP024 > .pin1" />
+      <trace from=".BGA > .pin025" to=".TP025 > .pin1" />
+      <trace from=".BGA > .pin026" to=".TP026 > .pin1" />
+      <trace from=".BGA > .pin027" to=".TP027 > .pin1" />
+      <trace from=".BGA > .pin030" to=".TP030 > .pin1" />
+      <trace from=".BGA > .pin032" to=".TP032 > .pin1" />
+      <trace from=".BGA > .pin034" to=".TP034 > .pin1" />
+      <trace from=".BGA > .pin036" to=".TP036 > .pin1" />
       <resistor name="R001" footprint="0201" pcbX="1.851mm" pcbY="-0.902mm" pcbRotation={270} layer="top" pcbPositionMode="relative_to_board_anchor" resistance="10k" />
       <capacitor name="C002" footprint="0402" pcbX="-1.746mm" pcbY="-1.751mm" pcbRotation={180} layer="top" pcbPositionMode="relative_to_board_anchor" capacitance="1uF" />
+      <resistor name="R003" footprint="0603" pcbX="-0.295mm" pcbY="2.062mm" pcbRotation={0} layer="top" pcbPositionMode="relative_to_board_anchor" resistance="1k" />
+      <trace from=".BGA > .pin030" to=".R001 > .pin1" />
+      <trace from=".R001 > .pin2" to=".TP036 > .pin1" />
+      <trace from=".BGA > .pin032" to=".C002 > .pin1" />
+      <trace from=".C002 > .pin2" to=".TP012 > .pin1" />
+      <trace from=".BGA > .pin009" to=".R003 > .pin1" />
+      <trace from=".R003 > .pin2" to=".TP034 > .pin1" />
   </board>
 )

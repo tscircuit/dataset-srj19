@@ -6,8 +6,8 @@
     {
       "sampleName": "sample001",
       "sourceFile": "circuits/sample001/sample001.circuit.simple-route.json",
-      "connectionCount": 1,
-      "obstacleCount": 48,
+      "connectionCount": 11,
+      "obstacleCount": 47,
       "bgaLayer": "bottom",
       "passiveLayer": "top",
       "passiveOverlayCount": 4,
@@ -21,11 +21,11 @@
     {
       "sampleName": "sample002",
       "sourceFile": "circuits/sample002/sample002.circuit.simple-route.json",
-      "connectionCount": 3,
-      "obstacleCount": 68,
+      "connectionCount": 18,
+      "obstacleCount": 67,
       "bgaLayer": "top",
       "passiveLayer": "bottom",
-      "passiveOverlayCount": 4,
+      "passiveOverlayCount": 6,
       "bounds": {
         "minX": -6.525,
         "maxX": 6.525,
@@ -36,11 +36,11 @@
     {
       "sampleName": "sample003",
       "sourceFile": "circuits/sample003/sample003.circuit.simple-route.json",
-      "connectionCount": 13,
-      "obstacleCount": 93,
+      "connectionCount": 26,
+      "obstacleCount": 90,
       "bgaLayer": "bottom",
       "passiveLayer": "top",
-      "passiveOverlayCount": 6,
+      "passiveOverlayCount": 10,
       "bounds": {
         "minX": -8.625,
         "maxX": 8.625,
@@ -51,11 +51,11 @@
     {
       "sampleName": "sample004",
       "sourceFile": "circuits/sample004/sample004.circuit.simple-route.json",
-      "connectionCount": 4,
+      "connectionCount": 34,
       "obstacleCount": 115,
       "bgaLayer": "top",
       "passiveLayer": "bottom",
-      "passiveOverlayCount": 8,
+      "passiveOverlayCount": 12,
       "bounds": {
         "minX": -10.725,
         "maxX": 10.725,
@@ -66,11 +66,11 @@
     {
       "sampleName": "sample005",
       "sourceFile": "circuits/sample005/sample005.circuit.simple-route.json",
-      "connectionCount": 21,
-      "obstacleCount": 152,
+      "connectionCount": 48,
+      "obstacleCount": 148,
       "bgaLayer": "bottom",
       "passiveLayer": "top",
-      "passiveOverlayCount": 10,
+      "passiveOverlayCount": 14,
       "bounds": {
         "minX": -12.825,
         "maxX": 12.825,
@@ -81,11 +81,11 @@
     {
       "sampleName": "sample006",
       "sourceFile": "circuits/sample006/sample006.circuit.simple-route.json",
-      "connectionCount": 20,
-      "obstacleCount": 179,
+      "connectionCount": 54,
+      "obstacleCount": 175,
       "bgaLayer": "top",
       "passiveLayer": "bottom",
-      "passiveOverlayCount": 12,
+      "passiveOverlayCount": 16,
       "bounds": {
         "minX": -15.625,
         "maxX": 15.625,
@@ -96,11 +96,11 @@
     {
       "sampleName": "sample007",
       "sourceFile": "circuits/sample007/sample007.circuit.simple-route.json",
-      "connectionCount": 19,
-      "obstacleCount": 209,
+      "connectionCount": 56,
+      "obstacleCount": 200,
       "bgaLayer": "bottom",
       "passiveLayer": "top",
-      "passiveOverlayCount": 14,
+      "passiveOverlayCount": 16,
       "bounds": {
         "minX": -17.725,
         "maxX": 17.725,
@@ -111,8 +111,8 @@
     {
       "sampleName": "sample008",
       "sourceFile": "circuits/sample008/sample008.circuit.simple-route.json",
-      "connectionCount": 2,
-      "obstacleCount": 52,
+      "connectionCount": 14,
+      "obstacleCount": 50,
       "bgaLayer": "top",
       "passiveLayer": "bottom",
       "passiveOverlayCount": 4,
@@ -126,11 +126,11 @@
     {
       "sampleName": "sample009",
       "sourceFile": "circuits/sample009/sample009.circuit.simple-route.json",
-      "connectionCount": 0,
-      "obstacleCount": 68,
+      "connectionCount": 21,
+      "obstacleCount": 70,
       "bgaLayer": "bottom",
       "passiveLayer": "top",
-      "passiveOverlayCount": 6,
+      "passiveOverlayCount": 8,
       "bounds": {
         "minX": -5.78,
         "maxX": 5.78,
@@ -141,11 +141,11 @@
     {
       "sampleName": "sample010",
       "sourceFile": "circuits/sample010/sample010.circuit.simple-route.json",
-      "connectionCount": 5,
+      "connectionCount": 26,
       "obstacleCount": 90,
       "bgaLayer": "top",
       "passiveLayer": "bottom",
-      "passiveOverlayCount": 6,
+      "passiveOverlayCount": 10,
       "bounds": {
         "minX": -7.225,
         "maxX": 7.225,
@@ -156,11 +156,11 @@
     {
       "sampleName": "sample011",
       "sourceFile": "circuits/sample011/sample011.circuit.simple-route.json",
-      "connectionCount": 76,
+      "connectionCount": 85,
       "obstacleCount": 166,
       "bgaLayer": "bottom",
       "passiveLayer": "top",
-      "passiveOverlayCount": 8,
+      "passiveOverlayCount": 10,
       "bounds": {
         "minX": -14.925,
         "maxX": 14.925,
@@ -171,11 +171,11 @@
     {
       "sampleName": "sample012",
       "sourceFile": "circuits/sample012/sample012.circuit.simple-route.json",
-      "connectionCount": 29,
-      "obstacleCount": 156,
+      "connectionCount": 47,
+      "obstacleCount": 147,
       "bgaLayer": "top",
       "passiveLayer": "bottom",
-      "passiveOverlayCount": 10,
+      "passiveOverlayCount": 12,
       "bounds": {
         "minX": -14.925,
         "maxX": 14.925,
@@ -186,11 +186,11 @@
     {
       "sampleName": "sample013",
       "sourceFile": "circuits/sample013/sample013.circuit.simple-route.json",
-      "connectionCount": 31,
-      "obstacleCount": 187,
+      "connectionCount": 57,
+      "obstacleCount": 178,
       "bgaLayer": "bottom",
       "passiveLayer": "top",
-      "passiveOverlayCount": 14,
+      "passiveOverlayCount": 16,
       "bounds": {
         "minX": -17.025,
         "maxX": 17.025,
@@ -201,11 +201,11 @@
     {
       "sampleName": "sample014",
       "sourceFile": "circuits/sample014/sample014.circuit.simple-route.json",
-      "connectionCount": 0,
-      "obstacleCount": 180,
+      "connectionCount": 38,
+      "obstacleCount": 182,
       "bgaLayer": "top",
       "passiveLayer": "bottom",
-      "passiveOverlayCount": 16,
+      "passiveOverlayCount": 18,
       "bounds": {
         "minX": -7.78,
         "maxX": 7.78,
@@ -216,11 +216,11 @@
     {
       "sampleName": "sample015",
       "sourceFile": "circuits/sample015/sample015.circuit.simple-route.json",
-      "connectionCount": 16,
-      "obstacleCount": 61,
+      "connectionCount": 23,
+      "obstacleCount": 59,
       "bgaLayer": "bottom",
       "passiveLayer": "top",
-      "passiveOverlayCount": 4,
+      "passiveOverlayCount": 6,
       "bounds": {
         "minX": -6.525,
         "maxX": 6.525,
@@ -231,8 +231,8 @@
     {
       "sampleName": "sample016",
       "sourceFile": "circuits/sample016/sample016.circuit.simple-route.json",
-      "connectionCount": 16,
-      "obstacleCount": 78,
+      "connectionCount": 22,
+      "obstacleCount": 71,
       "bgaLayer": "top",
       "passiveLayer": "bottom",
       "passiveOverlayCount": 6,
@@ -246,7 +246,7 @@
     {
       "sampleName": "sample017",
       "sourceFile": "circuits/sample017/sample017.circuit.simple-route.json",
-      "connectionCount": 0,
+      "connectionCount": 24,
       "obstacleCount": 88,
       "bgaLayer": "bottom",
       "passiveLayer": "top",
@@ -261,11 +261,11 @@
     {
       "sampleName": "sample018",
       "sourceFile": "circuits/sample018/sample018.circuit.simple-route.json",
-      "connectionCount": 1,
-      "obstacleCount": 111,
+      "connectionCount": 33,
+      "obstacleCount": 114,
       "bgaLayer": "top",
       "passiveLayer": "bottom",
-      "passiveOverlayCount": 10,
+      "passiveOverlayCount": 14,
       "bounds": {
         "minX": -7.925,
         "maxX": 7.925,
@@ -276,11 +276,11 @@
     {
       "sampleName": "sample019",
       "sourceFile": "circuits/sample019/sample019.circuit.simple-route.json",
-      "connectionCount": 56,
-      "obstacleCount": 178,
+      "connectionCount": 67,
+      "obstacleCount": 167,
       "bgaLayer": "bottom",
       "passiveLayer": "top",
-      "passiveOverlayCount": 12,
+      "passiveOverlayCount": 14,
       "bounds": {
         "minX": -17.025,
         "maxX": 17.025,
@@ -291,7 +291,7 @@
     {
       "sampleName": "sample020",
       "sourceFile": "circuits/sample020/sample020.circuit.simple-route.json",
-      "connectionCount": 1,
+      "connectionCount": 31,
       "obstacleCount": 152,
       "bgaLayer": "top",
       "passiveLayer": "bottom",
@@ -306,7 +306,7 @@
     {
       "sampleName": "sample021",
       "sourceFile": "circuits/sample021/sample021.circuit.simple-route.json",
-      "connectionCount": 1,
+      "connectionCount": 42,
       "obstacleCount": 186,
       "bgaLayer": "bottom",
       "passiveLayer": "top",
@@ -321,11 +321,11 @@
     {
       "sampleName": "sample022",
       "sourceFile": "circuits/sample022/sample022.circuit.simple-route.json",
-      "connectionCount": 2,
-      "obstacleCount": 49,
+      "connectionCount": 17,
+      "obstacleCount": 53,
       "bgaLayer": "top",
       "passiveLayer": "bottom",
-      "passiveOverlayCount": 4,
+      "passiveOverlayCount": 8,
       "bounds": {
         "minX": -5.38,
         "maxX": 5.38,
@@ -336,8 +336,8 @@
     {
       "sampleName": "sample023",
       "sourceFile": "circuits/sample023/sample023.circuit.simple-route.json",
-      "connectionCount": 2,
-      "obstacleCount": 67,
+      "connectionCount": 17,
+      "obstacleCount": 66,
       "bgaLayer": "bottom",
       "passiveLayer": "top",
       "passiveOverlayCount": 4,
@@ -351,11 +351,11 @@
     {
       "sampleName": "sample024",
       "sourceFile": "circuits/sample024/sample024.circuit.simple-route.json",
-      "connectionCount": 0,
-      "obstacleCount": 90,
+      "connectionCount": 28,
+      "obstacleCount": 92,
       "bgaLayer": "top",
       "passiveLayer": "bottom",
-      "passiveOverlayCount": 8,
+      "passiveOverlayCount": 10,
       "bounds": {
         "minX": -6.18,
         "maxX": 6.18,
@@ -366,8 +366,8 @@
     {
       "sampleName": "sample025",
       "sourceFile": "circuits/sample025/sample025.circuit.simple-route.json",
-      "connectionCount": 28,
-      "obstacleCount": 135,
+      "connectionCount": 46,
+      "obstacleCount": 127,
       "bgaLayer": "bottom",
       "passiveLayer": "top",
       "passiveOverlayCount": 12,
@@ -381,7 +381,7 @@
     {
       "sampleName": "sample026",
       "sourceFile": "circuits/sample026/sample026.circuit.simple-route.json",
-      "connectionCount": 2,
+      "connectionCount": 30,
       "obstacleCount": 130,
       "bgaLayer": "top",
       "passiveLayer": "bottom",
@@ -396,8 +396,8 @@
     {
       "sampleName": "sample027",
       "sourceFile": "circuits/sample027/sample027.circuit.simple-route.json",
-      "connectionCount": 2,
-      "obstacleCount": 155,
+      "connectionCount": 32,
+      "obstacleCount": 153,
       "bgaLayer": "bottom",
       "passiveLayer": "top",
       "passiveOverlayCount": 12,
@@ -411,8 +411,8 @@
     {
       "sampleName": "sample028",
       "sourceFile": "circuits/sample028/sample028.circuit.simple-route.json",
-      "connectionCount": 1,
-      "obstacleCount": 189,
+      "connectionCount": 44,
+      "obstacleCount": 188,
       "bgaLayer": "top",
       "passiveLayer": "bottom",
       "passiveOverlayCount": 16,
@@ -426,11 +426,11 @@
     {
       "sampleName": "sample029",
       "sourceFile": "circuits/sample029/sample029.circuit.simple-route.json",
-      "connectionCount": 5,
+      "connectionCount": 18,
       "obstacleCount": 54,
       "bgaLayer": "bottom",
       "passiveLayer": "top",
-      "passiveOverlayCount": 6,
+      "passiveOverlayCount": 8,
       "bounds": {
         "minX": -5.38,
         "maxX": 5.38,
@@ -441,7 +441,7 @@
     {
       "sampleName": "sample030",
       "sourceFile": "circuits/sample030/sample030.circuit.simple-route.json",
-      "connectionCount": 2,
+      "connectionCount": 20,
       "obstacleCount": 69,
       "bgaLayer": "top",
       "passiveLayer": "bottom",
@@ -456,11 +456,11 @@
     {
       "sampleName": "sample031",
       "sourceFile": "circuits/sample031/sample031.circuit.simple-route.json",
-      "connectionCount": 59,
-      "obstacleCount": 132,
+      "connectionCount": 69,
+      "obstacleCount": 133,
       "bgaLayer": "bottom",
       "passiveLayer": "top",
-      "passiveOverlayCount": 8,
+      "passiveOverlayCount": 10,
       "bounds": {
         "minX": -12.125,
         "maxX": 12.125,
@@ -471,7 +471,7 @@
     {
       "sampleName": "sample032",
       "sourceFile": "circuits/sample032/sample032.circuit.simple-route.json",
-      "connectionCount": 0,
+      "connectionCount": 30,
       "obstacleCount": 111,
       "bgaLayer": "top",
       "passiveLayer": "bottom",
@@ -486,7 +486,7 @@
     {
       "sampleName": "sample033",
       "sourceFile": "circuits/sample033/sample033.circuit.simple-route.json",
-      "connectionCount": 0,
+      "connectionCount": 36,
       "obstacleCount": 136,
       "bgaLayer": "bottom",
       "passiveLayer": "top",
@@ -501,8 +501,8 @@
     {
       "sampleName": "sample034",
       "sourceFile": "circuits/sample034/sample034.circuit.simple-route.json",
-      "connectionCount": 2,
-      "obstacleCount": 161,
+      "connectionCount": 39,
+      "obstacleCount": 160,
       "bgaLayer": "top",
       "passiveLayer": "bottom",
       "passiveOverlayCount": 14,
@@ -516,11 +516,11 @@
     {
       "sampleName": "sample035",
       "sourceFile": "circuits/sample035/sample035.circuit.simple-route.json",
-      "connectionCount": 2,
-      "obstacleCount": 188,
+      "connectionCount": 49,
+      "obstacleCount": 193,
       "bgaLayer": "bottom",
       "passiveLayer": "top",
-      "passiveOverlayCount": 8,
+      "passiveOverlayCount": 14,
       "bounds": {
         "minX": -11.425,
         "maxX": 11.425,
@@ -531,11 +531,11 @@
     {
       "sampleName": "sample036",
       "sourceFile": "circuits/sample036/sample036.circuit.simple-route.json",
-      "connectionCount": 14,
-      "obstacleCount": 58,
+      "connectionCount": 23,
+      "obstacleCount": 59,
       "bgaLayer": "top",
       "passiveLayer": "bottom",
-      "passiveOverlayCount": 2,
+      "passiveOverlayCount": 4,
       "bounds": {
         "minX": -6.525,
         "maxX": 6.525,
@@ -546,11 +546,11 @@
     {
       "sampleName": "sample037",
       "sourceFile": "circuits/sample037/sample037.circuit.simple-route.json",
-      "connectionCount": 25,
+      "connectionCount": 35,
       "obstacleCount": 84,
       "bgaLayer": "bottom",
       "passiveLayer": "top",
-      "passiveOverlayCount": 4,
+      "passiveOverlayCount": 6,
       "bounds": {
         "minX": -8.625,
         "maxX": 8.625,
@@ -561,11 +561,11 @@
     {
       "sampleName": "sample038",
       "sourceFile": "circuits/sample038/sample038.circuit.simple-route.json",
-      "connectionCount": 36,
-      "obstacleCount": 110,
+      "connectionCount": 44,
+      "obstacleCount": 108,
       "bgaLayer": "top",
       "passiveLayer": "bottom",
-      "passiveOverlayCount": 4,
+      "passiveOverlayCount": 6,
       "bounds": {
         "minX": -10.725,
         "maxX": 10.725,
@@ -576,11 +576,11 @@
     {
       "sampleName": "sample039",
       "sourceFile": "circuits/sample039/sample039.circuit.simple-route.json",
-      "connectionCount": 4,
-      "obstacleCount": 112,
+      "connectionCount": 33,
+      "obstacleCount": 114,
       "bgaLayer": "bottom",
       "passiveLayer": "top",
-      "passiveOverlayCount": 6,
+      "passiveOverlayCount": 10,
       "bounds": {
         "minX": -9.325,
         "maxX": 9.325,
@@ -591,11 +591,11 @@
     {
       "sampleName": "sample040",
       "sourceFile": "circuits/sample040/sample040.circuit.simple-route.json",
-      "connectionCount": 1,
-      "obstacleCount": 134,
+      "connectionCount": 35,
+      "obstacleCount": 135,
       "bgaLayer": "top",
       "passiveLayer": "bottom",
-      "passiveOverlayCount": 8,
+      "passiveOverlayCount": 10,
       "bounds": {
         "minX": -8.625,
         "maxX": 8.625,
@@ -606,11 +606,11 @@
     {
       "sampleName": "sample041",
       "sourceFile": "circuits/sample041/sample041.circuit.simple-route.json",
-      "connectionCount": 2,
-      "obstacleCount": 158,
+      "connectionCount": 41,
+      "obstacleCount": 162,
       "bgaLayer": "bottom",
       "passiveLayer": "top",
-      "passiveOverlayCount": 8,
+      "passiveOverlayCount": 14,
       "bounds": {
         "minX": -10.725,
         "maxX": 10.725,
@@ -621,11 +621,11 @@
     {
       "sampleName": "sample042",
       "sourceFile": "circuits/sample042/sample042.circuit.simple-route.json",
-      "connectionCount": 11,
-      "obstacleCount": 193,
+      "connectionCount": 50,
+      "obstacleCount": 194,
       "bgaLayer": "top",
       "passiveLayer": "bottom",
-      "passiveOverlayCount": 10,
+      "passiveOverlayCount": 16,
       "bounds": {
         "minX": -13.525,
         "maxX": 13.525,
@@ -636,11 +636,11 @@
     {
       "sampleName": "sample043",
       "sourceFile": "circuits/sample043/sample043.circuit.simple-route.json",
-      "connectionCount": 0,
-      "obstacleCount": 48,
+      "connectionCount": 14,
+      "obstacleCount": 50,
       "bgaLayer": "bottom",
       "passiveLayer": "top",
-      "passiveOverlayCount": 2,
+      "passiveOverlayCount": 4,
       "bounds": {
         "minX": -5.38,
         "maxX": 5.38,
@@ -651,11 +651,11 @@
     {
       "sampleName": "sample044",
       "sourceFile": "circuits/sample044/sample044.circuit.simple-route.json",
-      "connectionCount": 0,
-      "obstacleCount": 69,
+      "connectionCount": 22,
+      "obstacleCount": 71,
       "bgaLayer": "top",
       "passiveLayer": "bottom",
-      "passiveOverlayCount": 4,
+      "passiveOverlayCount": 6,
       "bounds": {
         "minX": -6.525,
         "maxX": 6.525,
@@ -666,11 +666,11 @@
     {
       "sampleName": "sample045",
       "sourceFile": "circuits/sample045/sample045.circuit.simple-route.json",
-      "connectionCount": 18,
+      "connectionCount": 36,
       "obstacleCount": 100,
       "bgaLayer": "bottom",
       "passiveLayer": "top",
-      "passiveOverlayCount": 6,
+      "passiveOverlayCount": 8,
       "bounds": {
         "minX": -10.025,
         "maxX": 10.025,
@@ -681,11 +681,11 @@
     {
       "sampleName": "sample046",
       "sourceFile": "circuits/sample046/sample046.circuit.simple-route.json",
-      "connectionCount": 50,
+      "connectionCount": 64,
       "obstacleCount": 145,
       "bgaLayer": "top",
       "passiveLayer": "bottom",
-      "passiveOverlayCount": 6,
+      "passiveOverlayCount": 10,
       "bounds": {
         "minX": -14.225,
         "maxX": 14.225,
@@ -696,11 +696,11 @@
     {
       "sampleName": "sample047",
       "sourceFile": "circuits/sample047/sample047.circuit.simple-route.json",
-      "connectionCount": 5,
-      "obstacleCount": 137,
+      "connectionCount": 38,
+      "obstacleCount": 138,
       "bgaLayer": "bottom",
       "passiveLayer": "top",
-      "passiveOverlayCount": 8,
+      "passiveOverlayCount": 10,
       "bounds": {
         "minX": -10.725,
         "maxX": 10.725,
@@ -711,11 +711,11 @@
     {
       "sampleName": "sample048",
       "sourceFile": "circuits/sample048/sample048.circuit.simple-route.json",
-      "connectionCount": 11,
-      "obstacleCount": 170,
+      "connectionCount": 53,
+      "obstacleCount": 174,
       "bgaLayer": "top",
       "passiveLayer": "bottom",
-      "passiveOverlayCount": 10,
+      "passiveOverlayCount": 16,
       "bounds": {
         "minX": -12.825,
         "maxX": 12.825,
@@ -726,11 +726,11 @@
     {
       "sampleName": "sample049",
       "sourceFile": "circuits/sample049/sample049.circuit.simple-route.json",
-      "connectionCount": 9,
-      "obstacleCount": 199,
+      "connectionCount": 53,
+      "obstacleCount": 197,
       "bgaLayer": "bottom",
       "passiveLayer": "top",
-      "passiveOverlayCount": 14,
+      "passiveOverlayCount": 16,
       "bounds": {
         "minX": -14.925,
         "maxX": 14.925,
@@ -741,11 +741,11 @@
     {
       "sampleName": "sample050",
       "sourceFile": "circuits/sample050/sample050.circuit.simple-route.json",
-      "connectionCount": 2,
-      "obstacleCount": 52,
+      "connectionCount": 17,
+      "obstacleCount": 53,
       "bgaLayer": "top",
       "passiveLayer": "bottom",
-      "passiveOverlayCount": 4,
+      "passiveOverlayCount": 6,
       "bounds": {
         "minX": -5.38,
         "maxX": 5.38,
@@ -756,11 +756,11 @@
     {
       "sampleName": "sample051",
       "sourceFile": "circuits/sample051/sample051.circuit.simple-route.json",
-      "connectionCount": 0,
-      "obstacleCount": 66,
+      "connectionCount": 21,
+      "obstacleCount": 70,
       "bgaLayer": "bottom",
       "passiveLayer": "top",
-      "passiveOverlayCount": 4,
+      "passiveOverlayCount": 8,
       "bounds": {
         "minX": -5.78,
         "maxX": 5.78,
@@ -771,11 +771,11 @@
     {
       "sampleName": "sample052",
       "sourceFile": "circuits/sample052/sample052.circuit.simple-route.json",
-      "connectionCount": 12,
+      "connectionCount": 28,
       "obstacleCount": 92,
       "bgaLayer": "top",
       "passiveLayer": "bottom",
-      "passiveOverlayCount": 6,
+      "passiveOverlayCount": 10,
       "bounds": {
         "minX": -8.625,
         "maxX": 8.625,
@@ -786,11 +786,11 @@
     {
       "sampleName": "sample053",
       "sourceFile": "circuits/sample053/sample053.circuit.simple-route.json",
-      "connectionCount": 2,
-      "obstacleCount": 110,
+      "connectionCount": 30,
+      "obstacleCount": 111,
       "bgaLayer": "bottom",
       "passiveLayer": "top",
-      "passiveOverlayCount": 8,
+      "passiveOverlayCount": 10,
       "bounds": {
         "minX": -6.58,
         "maxX": 6.58,
@@ -801,11 +801,11 @@
     {
       "sampleName": "sample054",
       "sourceFile": "circuits/sample054/sample054.circuit.simple-route.json",
-      "connectionCount": 13,
-      "obstacleCount": 147,
+      "connectionCount": 45,
+      "obstacleCount": 145,
       "bgaLayer": "top",
       "passiveLayer": "bottom",
-      "passiveOverlayCount": 10,
+      "passiveOverlayCount": 12,
       "bounds": {
         "minX": -12.825,
         "maxX": 12.825,
@@ -816,11 +816,11 @@
     {
       "sampleName": "sample055",
       "sourceFile": "circuits/sample055/sample055.circuit.simple-route.json",
-      "connectionCount": 5,
-      "obstacleCount": 167,
+      "connectionCount": 50,
+      "obstacleCount": 171,
       "bgaLayer": "bottom",
       "passiveLayer": "top",
-      "passiveOverlayCount": 12,
+      "passiveOverlayCount": 18,
       "bounds": {
         "minX": -14.925,
         "maxX": 14.925,
@@ -831,8 +831,8 @@
     {
       "sampleName": "sample056",
       "sourceFile": "circuits/sample056/sample056.circuit.simple-route.json",
-      "connectionCount": 17,
-      "obstacleCount": 207,
+      "connectionCount": 55,
+      "obstacleCount": 199,
       "bgaLayer": "top",
       "passiveLayer": "bottom",
       "passiveOverlayCount": 16,
@@ -846,8 +846,8 @@
     {
       "sampleName": "sample057",
       "sourceFile": "circuits/sample057/sample057.circuit.simple-route.json",
-      "connectionCount": 12,
-      "obstacleCount": 56,
+      "connectionCount": 17,
+      "obstacleCount": 53,
       "bgaLayer": "bottom",
       "passiveLayer": "top",
       "passiveOverlayCount": 2,
@@ -861,8 +861,8 @@
     {
       "sampleName": "sample058",
       "sourceFile": "circuits/sample058/sample058.circuit.simple-route.json",
-      "connectionCount": 20,
-      "obstacleCount": 81,
+      "connectionCount": 29,
+      "obstacleCount": 78,
       "bgaLayer": "top",
       "passiveLayer": "bottom",
       "passiveOverlayCount": 6,
@@ -876,7 +876,7 @@
     {
       "sampleName": "sample059",
       "sourceFile": "circuits/sample059/sample059.circuit.simple-route.json",
-      "connectionCount": 0,
+      "connectionCount": 28,
       "obstacleCount": 92,
       "bgaLayer": "bottom",
       "passiveLayer": "top",
@@ -891,11 +891,11 @@
     {
       "sampleName": "sample060",
       "sourceFile": "circuits/sample060/sample060.circuit.simple-route.json",
-      "connectionCount": 18,
-      "obstacleCount": 124,
+      "connectionCount": 41,
+      "obstacleCount": 122,
       "bgaLayer": "top",
       "passiveLayer": "bottom",
-      "passiveOverlayCount": 10,
+      "passiveOverlayCount": 12,
       "bounds": {
         "minX": -11.425,
         "maxX": 11.425,
@@ -906,8 +906,8 @@
     {
       "sampleName": "sample061",
       "sourceFile": "circuits/sample061/sample061.circuit.simple-route.json",
-      "connectionCount": 18,
-      "obstacleCount": 152,
+      "connectionCount": 44,
+      "obstacleCount": 144,
       "bgaLayer": "bottom",
       "passiveLayer": "top",
       "passiveOverlayCount": 12,
@@ -921,11 +921,11 @@
     {
       "sampleName": "sample062",
       "sourceFile": "circuits/sample062/sample062.circuit.simple-route.json",
-      "connectionCount": 21,
-      "obstacleCount": 180,
+      "connectionCount": 49,
+      "obstacleCount": 170,
       "bgaLayer": "top",
       "passiveLayer": "bottom",
-      "passiveOverlayCount": 14,
+      "passiveOverlayCount": 12,
       "bounds": {
         "minX": -17.025,
         "maxX": 17.025,
@@ -936,7 +936,7 @@
     {
       "sampleName": "sample063",
       "sourceFile": "circuits/sample063/sample063.circuit.simple-route.json",
-      "connectionCount": 0,
+      "connectionCount": 36,
       "obstacleCount": 180,
       "bgaLayer": "bottom",
       "passiveLayer": "top",
@@ -951,8 +951,8 @@
     {
       "sampleName": "sample064",
       "sourceFile": "circuits/sample064/sample064.circuit.simple-route.json",
-      "connectionCount": 1,
-      "obstacleCount": 51,
+      "connectionCount": 14,
+      "obstacleCount": 50,
       "bgaLayer": "top",
       "passiveLayer": "bottom",
       "passiveOverlayCount": 4,
@@ -966,11 +966,11 @@
     {
       "sampleName": "sample065",
       "sourceFile": "circuits/sample065/sample065.circuit.simple-route.json",
-      "connectionCount": 7,
+      "connectionCount": 24,
       "obstacleCount": 73,
       "bgaLayer": "bottom",
       "passiveLayer": "top",
-      "passiveOverlayCount": 6,
+      "passiveOverlayCount": 8,
       "bounds": {
         "minX": -6.525,
         "maxX": 6.525,
@@ -981,7 +981,7 @@
     {
       "sampleName": "sample066",
       "sourceFile": "circuits/sample066/sample066.circuit.simple-route.json",
-      "connectionCount": 2,
+      "connectionCount": 27,
       "obstacleCount": 91,
       "bgaLayer": "top",
       "passiveLayer": "bottom",
@@ -996,7 +996,7 @@
     {
       "sampleName": "sample067",
       "sourceFile": "circuits/sample067/sample067.circuit.simple-route.json",
-      "connectionCount": 0,
+      "connectionCount": 22,
       "obstacleCount": 103,
       "bgaLayer": "bottom",
       "passiveLayer": "top",
@@ -1011,11 +1011,11 @@
     {
       "sampleName": "sample068",
       "sourceFile": "circuits/sample068/sample068.circuit.simple-route.json",
-      "connectionCount": 44,
-      "obstacleCount": 170,
+      "connectionCount": 61,
+      "obstacleCount": 161,
       "bgaLayer": "top",
       "passiveLayer": "bottom",
-      "passiveOverlayCount": 14,
+      "passiveOverlayCount": 12,
       "bounds": {
         "minX": -16.325,
         "maxX": 16.325,
@@ -1026,7 +1026,7 @@
     {
       "sampleName": "sample069",
       "sourceFile": "circuits/sample069/sample069.circuit.simple-route.json",
-      "connectionCount": 0,
+      "connectionCount": 31,
       "obstacleCount": 152,
       "bgaLayer": "bottom",
       "passiveLayer": "top",
@@ -1041,7 +1041,7 @@
     {
       "sampleName": "sample070",
       "sourceFile": "circuits/sample070/sample070.circuit.simple-route.json",
-      "connectionCount": 0,
+      "connectionCount": 44,
       "obstacleCount": 188,
       "bgaLayer": "top",
       "passiveLayer": "bottom",
@@ -1056,11 +1056,11 @@
     {
       "sampleName": "sample071",
       "sourceFile": "circuits/sample071/sample071.circuit.simple-route.json",
-      "connectionCount": 1,
-      "obstacleCount": 51,
+      "connectionCount": 18,
+      "obstacleCount": 54,
       "bgaLayer": "bottom",
       "passiveLayer": "top",
-      "passiveOverlayCount": 4,
+      "passiveOverlayCount": 8,
       "bounds": {
         "minX": -5.38,
         "maxX": 5.38,
@@ -1071,11 +1071,11 @@
     {
       "sampleName": "sample072",
       "sourceFile": "circuits/sample072/sample072.circuit.simple-route.json",
-      "connectionCount": 0,
-      "obstacleCount": 70,
+      "connectionCount": 23,
+      "obstacleCount": 72,
       "bgaLayer": "top",
       "passiveLayer": "bottom",
-      "passiveOverlayCount": 6,
+      "passiveOverlayCount": 8,
       "bounds": {
         "minX": -5.78,
         "maxX": 5.78,
@@ -1086,7 +1086,7 @@
     {
       "sampleName": "sample073",
       "sourceFile": "circuits/sample073/sample073.circuit.simple-route.json",
-      "connectionCount": 0,
+      "connectionCount": 23,
       "obstacleCount": 87,
       "bgaLayer": "bottom",
       "passiveLayer": "top",
@@ -1101,8 +1101,8 @@
     {
       "sampleName": "sample074",
       "sourceFile": "circuits/sample074/sample074.circuit.simple-route.json",
-      "connectionCount": 1,
-      "obstacleCount": 116,
+      "connectionCount": 34,
+      "obstacleCount": 115,
       "bgaLayer": "top",
       "passiveLayer": "bottom",
       "passiveOverlayCount": 12,
@@ -1116,7 +1116,7 @@
     {
       "sampleName": "sample075",
       "sourceFile": "circuits/sample075/sample075.circuit.simple-route.json",
-      "connectionCount": 1,
+      "connectionCount": 28,
       "obstacleCount": 128,
       "bgaLayer": "bottom",
       "passiveLayer": "top",
@@ -1131,7 +1131,7 @@
     {
       "sampleName": "sample076",
       "sourceFile": "circuits/sample076/sample076.circuit.simple-route.json",
-      "connectionCount": 0,
+      "connectionCount": 35,
       "obstacleCount": 156,
       "bgaLayer": "top",
       "passiveLayer": "bottom",
@@ -1146,8 +1146,8 @@
     {
       "sampleName": "sample077",
       "sourceFile": "circuits/sample077/sample077.circuit.simple-route.json",
-      "connectionCount": 1,
-      "obstacleCount": 190,
+      "connectionCount": 45,
+      "obstacleCount": 189,
       "bgaLayer": "bottom",
       "passiveLayer": "top",
       "passiveOverlayCount": 16,
@@ -1161,11 +1161,11 @@
     {
       "sampleName": "sample078",
       "sourceFile": "circuits/sample078/sample078.circuit.simple-route.json",
-      "connectionCount": 8,
-      "obstacleCount": 56,
+      "connectionCount": 16,
+      "obstacleCount": 52,
       "bgaLayer": "top",
       "passiveLayer": "bottom",
-      "passiveOverlayCount": 6,
+      "passiveOverlayCount": 4,
       "bounds": {
         "minX": -6.525,
         "maxX": 6.525,
@@ -1176,8 +1176,8 @@
     {
       "sampleName": "sample079",
       "sourceFile": "circuits/sample079/sample079.circuit.simple-route.json",
-      "connectionCount": 24,
-      "obstacleCount": 84,
+      "connectionCount": 31,
+      "obstacleCount": 80,
       "bgaLayer": "bottom",
       "passiveLayer": "top",
       "passiveOverlayCount": 6,
@@ -1191,11 +1191,11 @@
     {
       "sampleName": "sample080",
       "sourceFile": "circuits/sample080/sample080.circuit.simple-route.json",
-      "connectionCount": 59,
-      "obstacleCount": 132,
+      "connectionCount": 71,
+      "obstacleCount": 135,
       "bgaLayer": "top",
       "passiveLayer": "bottom",
-      "passiveOverlayCount": 8,
+      "passiveOverlayCount": 12,
       "bounds": {
         "minX": -12.125,
         "maxX": 12.125,
@@ -1206,11 +1206,11 @@
     {
       "sampleName": "sample081",
       "sourceFile": "circuits/sample081/sample081.circuit.simple-route.json",
-      "connectionCount": 27,
-      "obstacleCount": 123,
+      "connectionCount": 40,
+      "obstacleCount": 121,
       "bgaLayer": "bottom",
       "passiveLayer": "top",
-      "passiveOverlayCount": 4,
+      "passiveOverlayCount": 8,
       "bounds": {
         "minX": -12.825,
         "maxX": 12.825,
@@ -1221,11 +1221,11 @@
     {
       "sampleName": "sample082",
       "sourceFile": "circuits/sample082/sample082.circuit.simple-route.json",
-      "connectionCount": 0,
-      "obstacleCount": 128,
+      "connectionCount": 32,
+      "obstacleCount": 132,
       "bgaLayer": "top",
       "passiveLayer": "bottom",
-      "passiveOverlayCount": 6,
+      "passiveOverlayCount": 10,
       "bounds": {
         "minX": -6.98,
         "maxX": 6.98,
@@ -1236,11 +1236,11 @@
     {
       "sampleName": "sample083",
       "sourceFile": "circuits/sample083/sample083.circuit.simple-route.json",
-      "connectionCount": 1,
-      "obstacleCount": 158,
+      "connectionCount": 41,
+      "obstacleCount": 162,
       "bgaLayer": "bottom",
       "passiveLayer": "top",
-      "passiveOverlayCount": 8,
+      "passiveOverlayCount": 12,
       "bounds": {
         "minX": -8.625,
         "maxX": 8.625,
@@ -1251,11 +1251,11 @@
     {
       "sampleName": "sample084",
       "sourceFile": "circuits/sample084/sample084.circuit.simple-route.json",
-      "connectionCount": 2,
-      "obstacleCount": 186,
+      "connectionCount": 47,
+      "obstacleCount": 191,
       "bgaLayer": "top",
       "passiveLayer": "bottom",
-      "passiveOverlayCount": 10,
+      "passiveOverlayCount": 16,
       "bounds": {
         "minX": -10.725,
         "maxX": 10.725,
@@ -1266,11 +1266,11 @@
     {
       "sampleName": "sample085",
       "sourceFile": "circuits/sample085/sample085.circuit.simple-route.json",
-      "connectionCount": 4,
-      "obstacleCount": 51,
+      "connectionCount": 17,
+      "obstacleCount": 53,
       "bgaLayer": "bottom",
       "passiveLayer": "top",
-      "passiveOverlayCount": 2,
+      "passiveOverlayCount": 4,
       "bounds": {
         "minX": -5.38,
         "maxX": 5.38,
@@ -1281,11 +1281,11 @@
     {
       "sampleName": "sample086",
       "sourceFile": "circuits/sample086/sample086.circuit.simple-route.json",
-      "connectionCount": 8,
-      "obstacleCount": 71,
+      "connectionCount": 23,
+      "obstacleCount": 72,
       "bgaLayer": "top",
       "passiveLayer": "bottom",
-      "passiveOverlayCount": 4,
+      "passiveOverlayCount": 6,
       "bounds": {
         "minX": -7.225,
         "maxX": 7.225,
@@ -1296,11 +1296,11 @@
     {
       "sampleName": "sample087",
       "sourceFile": "circuits/sample087/sample087.circuit.simple-route.json",
-      "connectionCount": 32,
-      "obstacleCount": 107,
+      "connectionCount": 42,
+      "obstacleCount": 106,
       "bgaLayer": "bottom",
       "passiveLayer": "top",
-      "passiveOverlayCount": 4,
+      "passiveOverlayCount": 8,
       "bounds": {
         "minX": -10.725,
         "maxX": 10.725,
@@ -1311,11 +1311,11 @@
     {
       "sampleName": "sample088",
       "sourceFile": "circuits/sample088/sample088.circuit.simple-route.json",
-      "connectionCount": 1,
-      "obstacleCount": 103,
+      "connectionCount": 23,
+      "obstacleCount": 104,
       "bgaLayer": "top",
       "passiveLayer": "bottom",
-      "passiveOverlayCount": 6,
+      "passiveOverlayCount": 8,
       "bounds": {
         "minX": -6.58,
         "maxX": 6.58,
@@ -1326,11 +1326,11 @@
     {
       "sampleName": "sample089",
       "sourceFile": "circuits/sample089/sample089.circuit.simple-route.json",
-      "connectionCount": 4,
-      "obstacleCount": 133,
+      "connectionCount": 36,
+      "obstacleCount": 136,
       "bgaLayer": "bottom",
       "passiveLayer": "top",
-      "passiveOverlayCount": 8,
+      "passiveOverlayCount": 12,
       "bounds": {
         "minX": -7.925,
         "maxX": 7.925,
@@ -1341,11 +1341,11 @@
     {
       "sampleName": "sample090",
       "sourceFile": "circuits/sample090/sample090.circuit.simple-route.json",
-      "connectionCount": 3,
-      "obstacleCount": 160,
+      "connectionCount": 41,
+      "obstacleCount": 162,
       "bgaLayer": "top",
       "passiveLayer": "bottom",
-      "passiveOverlayCount": 10,
+      "passiveOverlayCount": 14,
       "bounds": {
         "minX": -10.725,
         "maxX": 10.725,
@@ -1356,11 +1356,11 @@
     {
       "sampleName": "sample091",
       "sourceFile": "circuits/sample091/sample091.circuit.simple-route.json",
-      "connectionCount": 2,
-      "obstacleCount": 200,
+      "connectionCount": 61,
+      "obstacleCount": 205,
       "bgaLayer": "bottom",
       "passiveLayer": "top",
-      "passiveOverlayCount": 12,
+      "passiveOverlayCount": 18,
       "bounds": {
         "minX": -12.825,
         "maxX": 12.825,
@@ -1371,8 +1371,8 @@
     {
       "sampleName": "sample092",
       "sourceFile": "circuits/sample092/sample092.circuit.simple-route.json",
-      "connectionCount": 3,
-      "obstacleCount": 50,
+      "connectionCount": 12,
+      "obstacleCount": 48,
       "bgaLayer": "top",
       "passiveLayer": "bottom",
       "passiveOverlayCount": 4,
@@ -1386,11 +1386,11 @@
     {
       "sampleName": "sample093",
       "sourceFile": "circuits/sample093/sample093.circuit.simple-route.json",
-      "connectionCount": 1,
-      "obstacleCount": 66,
+      "connectionCount": 18,
+      "obstacleCount": 67,
       "bgaLayer": "bottom",
       "passiveLayer": "top",
-      "passiveOverlayCount": 4,
+      "passiveOverlayCount": 6,
       "bounds": {
         "minX": -5.78,
         "maxX": 5.78,
@@ -1401,11 +1401,11 @@
     {
       "sampleName": "sample094",
       "sourceFile": "circuits/sample094/sample094.circuit.simple-route.json",
-      "connectionCount": 18,
-      "obstacleCount": 98,
+      "connectionCount": 30,
+      "obstacleCount": 94,
       "bgaLayer": "top",
       "passiveLayer": "bottom",
-      "passiveOverlayCount": 6,
+      "passiveOverlayCount": 8,
       "bounds": {
         "minX": -10.025,
         "maxX": 10.025,
@@ -1416,8 +1416,8 @@
     {
       "sampleName": "sample095",
       "sourceFile": "circuits/sample095/sample095.circuit.simple-route.json",
-      "connectionCount": 7,
-      "obstacleCount": 116,
+      "connectionCount": 31,
+      "obstacleCount": 112,
       "bgaLayer": "bottom",
       "passiveLayer": "top",
       "passiveOverlayCount": 8,
@@ -1431,11 +1431,11 @@
     {
       "sampleName": "sample096",
       "sourceFile": "circuits/sample096/sample096.circuit.simple-route.json",
-      "connectionCount": 2,
-      "obstacleCount": 140,
+      "connectionCount": 42,
+      "obstacleCount": 142,
       "bgaLayer": "top",
       "passiveLayer": "bottom",
-      "passiveOverlayCount": 10,
+      "passiveOverlayCount": 14,
       "bounds": {
         "minX": -10.025,
         "maxX": 10.025,
@@ -1446,11 +1446,11 @@
     {
       "sampleName": "sample097",
       "sourceFile": "circuits/sample097/sample097.circuit.simple-route.json",
-      "connectionCount": 2,
+      "connectionCount": 46,
       "obstacleCount": 167,
       "bgaLayer": "bottom",
       "passiveLayer": "top",
-      "passiveOverlayCount": 12,
+      "passiveOverlayCount": 14,
       "bounds": {
         "minX": -12.125,
         "maxX": 12.125,
@@ -1461,11 +1461,11 @@
     {
       "sampleName": "sample098",
       "sourceFile": "circuits/sample098/sample098.circuit.simple-route.json",
-      "connectionCount": 8,
-      "obstacleCount": 203,
+      "connectionCount": 60,
+      "obstacleCount": 204,
       "bgaLayer": "top",
       "passiveLayer": "bottom",
-      "passiveOverlayCount": 14,
+      "passiveOverlayCount": 18,
       "bounds": {
         "minX": -14.925,
         "maxX": 14.925,
@@ -1476,11 +1476,11 @@
     {
       "sampleName": "sample099",
       "sourceFile": "circuits/sample099/sample099.circuit.simple-route.json",
-      "connectionCount": 15,
+      "connectionCount": 25,
       "obstacleCount": 61,
       "bgaLayer": "bottom",
       "passiveLayer": "top",
-      "passiveOverlayCount": 4,
+      "passiveOverlayCount": 6,
       "bounds": {
         "minX": -6.525,
         "maxX": 6.525,
@@ -1491,11 +1491,11 @@
     {
       "sampleName": "sample100",
       "sourceFile": "circuits/sample100/sample100.circuit.simple-route.json",
-      "connectionCount": 39,
-      "obstacleCount": 94,
+      "connectionCount": 48,
+      "obstacleCount": 97,
       "bgaLayer": "top",
       "passiveLayer": "bottom",
-      "passiveOverlayCount": 4,
+      "passiveOverlayCount": 8,
       "bounds": {
         "minX": -9.325,
         "maxX": 9.325,
@@ -1506,11 +1506,11 @@
     {
       "sampleName": "sample101",
       "sourceFile": "circuits/sample101/sample101.circuit.simple-route.json",
-      "connectionCount": 14,
-      "obstacleCount": 96,
+      "connectionCount": 31,
+      "obstacleCount": 95,
       "bgaLayer": "bottom",
       "passiveLayer": "top",
-      "passiveOverlayCount": 6,
+      "passiveOverlayCount": 8,
       "bounds": {
         "minX": -8.625,
         "maxX": 8.625,
@@ -1521,11 +1521,11 @@
     {
       "sampleName": "sample102",
       "sourceFile": "circuits/sample102/sample102.circuit.simple-route.json",
-      "connectionCount": 52,
-      "obstacleCount": 147,
+      "connectionCount": 63,
+      "obstacleCount": 144,
       "bgaLayer": "top",
       "passiveLayer": "bottom",
-      "passiveOverlayCount": 8,
+      "passiveOverlayCount": 10,
       "bounds": {
         "minX": -14.225,
         "maxX": 14.225,
@@ -1536,11 +1536,11 @@
     {
       "sampleName": "sample103",
       "sourceFile": "circuits/sample103/sample103.circuit.simple-route.json",
-      "connectionCount": 9,
-      "obstacleCount": 143,
+      "connectionCount": 42,
+      "obstacleCount": 142,
       "bgaLayer": "bottom",
       "passiveLayer": "top",
-      "passiveOverlayCount": 10,
+      "passiveOverlayCount": 12,
       "bounds": {
         "minX": -12.125,
         "maxX": 12.125,
@@ -1551,11 +1551,11 @@
     {
       "sampleName": "sample104",
       "sourceFile": "circuits/sample104/sample104.circuit.simple-route.json",
-      "connectionCount": 18,
-      "obstacleCount": 178,
+      "connectionCount": 53,
+      "obstacleCount": 174,
       "bgaLayer": "top",
       "passiveLayer": "bottom",
-      "passiveOverlayCount": 12,
+      "passiveOverlayCount": 14,
       "bounds": {
         "minX": -14.225,
         "maxX": 14.225,
@@ -1566,11 +1566,11 @@
     {
       "sampleName": "sample105",
       "sourceFile": "circuits/sample105/sample105.circuit.simple-route.json",
-      "connectionCount": 14,
-      "obstacleCount": 210,
+      "connectionCount": 65,
+      "obstacleCount": 209,
       "bgaLayer": "bottom",
       "passiveLayer": "top",
-      "passiveOverlayCount": 16,
+      "passiveOverlayCount": 18,
       "bounds": {
         "minX": -16.325,
         "maxX": 16.325,
@@ -1581,11 +1581,11 @@
     {
       "sampleName": "sample106",
       "sourceFile": "circuits/sample106/sample106.circuit.simple-route.json",
-      "connectionCount": 0,
-      "obstacleCount": 50,
+      "connectionCount": 16,
+      "obstacleCount": 52,
       "bgaLayer": "top",
       "passiveLayer": "bottom",
-      "passiveOverlayCount": 4,
+      "passiveOverlayCount": 6,
       "bounds": {
         "minX": -5.38,
         "maxX": 5.38,
@@ -1596,11 +1596,11 @@
     {
       "sampleName": "sample107",
       "sourceFile": "circuits/sample107/sample107.circuit.simple-route.json",
-      "connectionCount": 13,
-      "obstacleCount": 78,
+      "connectionCount": 28,
+      "obstacleCount": 77,
       "bgaLayer": "bottom",
       "passiveLayer": "top",
-      "passiveOverlayCount": 6,
+      "passiveOverlayCount": 8,
       "bounds": {
         "minX": -7.225,
         "maxX": 7.225,
@@ -1611,8 +1611,8 @@
     {
       "sampleName": "sample108",
       "sourceFile": "circuits/sample108/sample108.circuit.simple-route.json",
-      "connectionCount": 6,
-      "obstacleCount": 93,
+      "connectionCount": 27,
+      "obstacleCount": 91,
       "bgaLayer": "top",
       "passiveLayer": "bottom",
       "passiveOverlayCount": 8,
@@ -1626,11 +1626,11 @@
     {
       "sampleName": "sample109",
       "sourceFile": "circuits/sample109/sample109.circuit.simple-route.json",
-      "connectionCount": 8,
-      "obstacleCount": 112,
+      "connectionCount": 30,
+      "obstacleCount": 111,
       "bgaLayer": "bottom",
       "passiveLayer": "top",
-      "passiveOverlayCount": 10,
+      "passiveOverlayCount": 12,
       "bounds": {
         "minX": -7.225,
         "maxX": 7.225,
@@ -1641,11 +1641,11 @@
     {
       "sampleName": "sample110",
       "sourceFile": "circuits/sample110/sample110.circuit.simple-route.json",
-      "connectionCount": 19,
-      "obstacleCount": 151,
+      "connectionCount": 46,
+      "obstacleCount": 146,
       "bgaLayer": "top",
       "passiveLayer": "bottom",
-      "passiveOverlayCount": 12,
+      "passiveOverlayCount": 14,
       "bounds": {
         "minX": -14.225,
         "maxX": 14.225,
@@ -1656,8 +1656,8 @@
     {
       "sampleName": "sample111",
       "sourceFile": "circuits/sample111/sample111.circuit.simple-route.json",
-      "connectionCount": 21,
-      "obstacleCount": 183,
+      "connectionCount": 56,
+      "obstacleCount": 177,
       "bgaLayer": "bottom",
       "passiveLayer": "top",
       "passiveOverlayCount": 14,
@@ -1671,7 +1671,7 @@
     {
       "sampleName": "sample112",
       "sourceFile": "circuits/sample112/sample112.circuit.simple-route.json",
-      "connectionCount": 0,
+      "connectionCount": 36,
       "obstacleCount": 180,
       "bgaLayer": "top",
       "passiveLayer": "bottom",
@@ -1686,8 +1686,8 @@
     {
       "sampleName": "sample113",
       "sourceFile": "circuits/sample113/sample113.circuit.simple-route.json",
-      "connectionCount": 4,
-      "obstacleCount": 52,
+      "connectionCount": 14,
+      "obstacleCount": 50,
       "bgaLayer": "bottom",
       "passiveLayer": "top",
       "passiveOverlayCount": 4,
@@ -1701,11 +1701,11 @@
     {
       "sampleName": "sample114",
       "sourceFile": "circuits/sample114/sample114.circuit.simple-route.json",
-      "connectionCount": 3,
-      "obstacleCount": 71,
+      "connectionCount": 24,
+      "obstacleCount": 73,
       "bgaLayer": "top",
       "passiveLayer": "bottom",
-      "passiveOverlayCount": 6,
+      "passiveOverlayCount": 8,
       "bounds": {
         "minX": -5.78,
         "maxX": 5.78,
@@ -1716,11 +1716,11 @@
     {
       "sampleName": "sample115",
       "sourceFile": "circuits/sample115/sample115.circuit.simple-route.json",
-      "connectionCount": 3,
-      "obstacleCount": 88,
+      "connectionCount": 25,
+      "obstacleCount": 89,
       "bgaLayer": "bottom",
       "passiveLayer": "top",
-      "passiveOverlayCount": 8,
+      "passiveOverlayCount": 10,
       "bounds": {
         "minX": -6.18,
         "maxX": 6.18,
@@ -1731,11 +1731,11 @@
     {
       "sampleName": "sample116",
       "sourceFile": "circuits/sample116/sample116.circuit.simple-route.json",
-      "connectionCount": 17,
-      "obstacleCount": 122,
+      "connectionCount": 39,
+      "obstacleCount": 120,
       "bgaLayer": "top",
       "passiveLayer": "bottom",
-      "passiveOverlayCount": 10,
+      "passiveOverlayCount": 12,
       "bounds": {
         "minX": -11.425,
         "maxX": 11.425,
@@ -1746,8 +1746,8 @@
     {
       "sampleName": "sample117",
       "sourceFile": "circuits/sample117/sample117.circuit.simple-route.json",
-      "connectionCount": 36,
-      "obstacleCount": 165,
+      "connectionCount": 59,
+      "obstacleCount": 159,
       "bgaLayer": "bottom",
       "passiveLayer": "top",
       "passiveOverlayCount": 14,
@@ -1761,7 +1761,7 @@
     {
       "sampleName": "sample118",
       "sourceFile": "circuits/sample118/sample118.circuit.simple-route.json",
-      "connectionCount": 1,
+      "connectionCount": 28,
       "obstacleCount": 149,
       "bgaLayer": "top",
       "passiveLayer": "bottom",
@@ -1776,7 +1776,7 @@
     {
       "sampleName": "sample119",
       "sourceFile": "circuits/sample119/sample119.circuit.simple-route.json",
-      "connectionCount": 0,
+      "connectionCount": 41,
       "obstacleCount": 185,
       "bgaLayer": "bottom",
       "passiveLayer": "top",
@@ -1791,8 +1791,8 @@
     {
       "sampleName": "sample120",
       "sourceFile": "circuits/sample120/sample120.circuit.simple-route.json",
-      "connectionCount": 12,
-      "obstacleCount": 60,
+      "connectionCount": 21,
+      "obstacleCount": 57,
       "bgaLayer": "top",
       "passiveLayer": "bottom",
       "passiveOverlayCount": 6,
@@ -1806,11 +1806,11 @@
     {
       "sampleName": "sample121",
       "sourceFile": "circuits/sample121/sample121.circuit.simple-route.json",
-      "connectionCount": 38,
+      "connectionCount": 46,
       "obstacleCount": 95,
       "bgaLayer": "bottom",
       "passiveLayer": "top",
-      "passiveOverlayCount": 6,
+      "passiveOverlayCount": 8,
       "bounds": {
         "minX": -9.325,
         "maxX": 9.325,
@@ -1821,8 +1821,8 @@
     {
       "sampleName": "sample122",
       "sourceFile": "circuits/sample122/sample122.circuit.simple-route.json",
-      "connectionCount": 2,
-      "obstacleCount": 88,
+      "connectionCount": 23,
+      "obstacleCount": 87,
       "bgaLayer": "top",
       "passiveLayer": "bottom",
       "passiveOverlayCount": 10,
@@ -1836,7 +1836,7 @@
     {
       "sampleName": "sample123",
       "sourceFile": "circuits/sample123/sample123.circuit.simple-route.json",
-      "connectionCount": 1,
+      "connectionCount": 27,
       "obstacleCount": 108,
       "bgaLayer": "bottom",
       "passiveLayer": "top",
@@ -1851,11 +1851,11 @@
     {
       "sampleName": "sample124",
       "sourceFile": "circuits/sample124/sample124.circuit.simple-route.json",
-      "connectionCount": 75,
-      "obstacleCount": 196,
+      "connectionCount": 87,
+      "obstacleCount": 187,
       "bgaLayer": "top",
       "passiveLayer": "bottom",
-      "passiveOverlayCount": 16,
+      "passiveOverlayCount": 12,
       "bounds": {
         "minX": -17.725,
         "maxX": 17.725,
@@ -1866,7 +1866,7 @@
     {
       "sampleName": "sample125",
       "sourceFile": "circuits/sample125/sample125.circuit.simple-route.json",
-      "connectionCount": 0,
+      "connectionCount": 33,
       "obstacleCount": 154,
       "bgaLayer": "bottom",
       "passiveLayer": "top",
@@ -1881,7 +1881,7 @@
     {
       "sampleName": "sample126",
       "sourceFile": "circuits/sample126/sample126.circuit.simple-route.json",
-      "connectionCount": 0,
+      "connectionCount": 44,
       "obstacleCount": 188,
       "bgaLayer": "top",
       "passiveLayer": "bottom",
@@ -1896,11 +1896,11 @@
     {
       "sampleName": "sample127",
       "sourceFile": "circuits/sample127/sample127.circuit.simple-route.json",
-      "connectionCount": 0,
-      "obstacleCount": 48,
+      "connectionCount": 14,
+      "obstacleCount": 50,
       "bgaLayer": "bottom",
       "passiveLayer": "top",
-      "passiveOverlayCount": 2,
+      "passiveOverlayCount": 4,
       "bounds": {
         "minX": -5.38,
         "maxX": 5.38,
@@ -1911,11 +1911,11 @@
     {
       "sampleName": "sample128",
       "sourceFile": "circuits/sample128/sample128.circuit.simple-route.json",
-      "connectionCount": 11,
-      "obstacleCount": 74,
+      "connectionCount": 24,
+      "obstacleCount": 73,
       "bgaLayer": "top",
       "passiveLayer": "bottom",
-      "passiveOverlayCount": 4,
+      "passiveOverlayCount": 6,
       "bounds": {
         "minX": -7.225,
         "maxX": 7.225,
@@ -1926,11 +1926,11 @@
     {
       "sampleName": "sample129",
       "sourceFile": "circuits/sample129/sample129.circuit.simple-route.json",
-      "connectionCount": 59,
-      "obstacleCount": 128,
+      "connectionCount": 65,
+      "obstacleCount": 129,
       "bgaLayer": "bottom",
       "passiveLayer": "top",
-      "passiveOverlayCount": 4,
+      "passiveOverlayCount": 6,
       "bounds": {
         "minX": -12.125,
         "maxX": 12.125,
@@ -1941,11 +1941,11 @@
     {
       "sampleName": "sample130",
       "sourceFile": "circuits/sample130/sample130.circuit.simple-route.json",
-      "connectionCount": 1,
-      "obstacleCount": 113,
+      "connectionCount": 33,
+      "obstacleCount": 114,
       "bgaLayer": "top",
       "passiveLayer": "bottom",
-      "passiveOverlayCount": 6,
+      "passiveOverlayCount": 8,
       "bounds": {
         "minX": -8.625,
         "maxX": 8.625,
@@ -1956,11 +1956,11 @@
     {
       "sampleName": "sample131",
       "sourceFile": "circuits/sample131/sample131.circuit.simple-route.json",
-      "connectionCount": 0,
-      "obstacleCount": 126,
+      "connectionCount": 32,
+      "obstacleCount": 132,
       "bgaLayer": "bottom",
       "passiveLayer": "top",
-      "passiveOverlayCount": 6,
+      "passiveOverlayCount": 12,
       "bounds": {
         "minX": -6.98,
         "maxX": 6.98,
@@ -1971,11 +1971,11 @@
     {
       "sampleName": "sample132",
       "sourceFile": "circuits/sample132/sample132.circuit.simple-route.json",
-      "connectionCount": 1,
-      "obstacleCount": 160,
+      "connectionCount": 45,
+      "obstacleCount": 166,
       "bgaLayer": "top",
       "passiveLayer": "bottom",
-      "passiveOverlayCount": 8,
+      "passiveOverlayCount": 14,
       "bounds": {
         "minX": -7.925,
         "maxX": 7.925,
@@ -1986,11 +1986,11 @@
     {
       "sampleName": "sample133",
       "sourceFile": "circuits/sample133/sample133.circuit.simple-route.json",
-      "connectionCount": 0,
-      "obstacleCount": 189,
+      "connectionCount": 53,
+      "obstacleCount": 197,
       "bgaLayer": "bottom",
       "passiveLayer": "top",
-      "passiveOverlayCount": 10,
+      "passiveOverlayCount": 18,
       "bounds": {
         "minX": -10.025,
         "maxX": 10.025,
@@ -2001,11 +2001,11 @@
     {
       "sampleName": "sample134",
       "sourceFile": "circuits/sample134/sample134.circuit.simple-route.json",
-      "connectionCount": 5,
-      "obstacleCount": 53,
+      "connectionCount": 18,
+      "obstacleCount": 54,
       "bgaLayer": "top",
       "passiveLayer": "bottom",
-      "passiveOverlayCount": 2,
+      "passiveOverlayCount": 4,
       "bounds": {
         "minX": -5.38,
         "maxX": 5.38,
@@ -2016,11 +2016,11 @@
     {
       "sampleName": "sample135",
       "sourceFile": "circuits/sample135/sample135.circuit.simple-route.json",
-      "connectionCount": 1,
-      "obstacleCount": 65,
+      "connectionCount": 17,
+      "obstacleCount": 66,
       "bgaLayer": "bottom",
       "passiveLayer": "top",
-      "passiveOverlayCount": 4,
+      "passiveOverlayCount": 6,
       "bounds": {
         "minX": -5.78,
         "maxX": 5.78,
@@ -2031,11 +2031,11 @@
     {
       "sampleName": "sample136",
       "sourceFile": "circuits/sample136/sample136.circuit.simple-route.json",
-      "connectionCount": 28,
-      "obstacleCount": 106,
+      "connectionCount": 39,
+      "obstacleCount": 103,
       "bgaLayer": "top",
       "passiveLayer": "bottom",
-      "passiveOverlayCount": 6,
+      "passiveOverlayCount": 8,
       "bounds": {
         "minX": -10.725,
         "maxX": 10.725,
@@ -2046,11 +2046,11 @@
     {
       "sampleName": "sample137",
       "sourceFile": "circuits/sample137/sample137.circuit.simple-route.json",
-      "connectionCount": 39,
-      "obstacleCount": 134,
+      "connectionCount": 54,
+      "obstacleCount": 135,
       "bgaLayer": "bottom",
       "passiveLayer": "top",
-      "passiveOverlayCount": 6,
+      "passiveOverlayCount": 10,
       "bounds": {
         "minX": -12.825,
         "maxX": 12.825,
@@ -2061,11 +2061,11 @@
     {
       "sampleName": "sample138",
       "sourceFile": "circuits/sample138/sample138.circuit.simple-route.json",
-      "connectionCount": 4,
-      "obstacleCount": 132,
+      "connectionCount": 33,
+      "obstacleCount": 133,
       "bgaLayer": "top",
       "passiveLayer": "bottom",
-      "passiveOverlayCount": 8,
+      "passiveOverlayCount": 10,
       "bounds": {
         "minX": -7.925,
         "maxX": 7.925,
@@ -2076,11 +2076,11 @@
     {
       "sampleName": "sample139",
       "sourceFile": "circuits/sample139/sample139.circuit.simple-route.json",
-      "connectionCount": 0,
-      "obstacleCount": 165,
+      "connectionCount": 50,
+      "obstacleCount": 171,
       "bgaLayer": "bottom",
       "passiveLayer": "top",
-      "passiveOverlayCount": 10,
+      "passiveOverlayCount": 16,
       "bounds": {
         "minX": -10.025,
         "maxX": 10.025,
@@ -2091,11 +2091,11 @@
     {
       "sampleName": "sample140",
       "sourceFile": "circuits/sample140/sample140.circuit.simple-route.json",
-      "connectionCount": 3,
-      "obstacleCount": 198,
+      "connectionCount": 59,
+      "obstacleCount": 203,
       "bgaLayer": "top",
       "passiveLayer": "bottom",
-      "passiveOverlayCount": 12,
+      "passiveOverlayCount": 18,
       "bounds": {
         "minX": -12.125,
         "maxX": 12.125,
@@ -2106,11 +2106,11 @@
     {
       "sampleName": "sample141",
       "sourceFile": "circuits/sample141/sample141.circuit.simple-route.json",
-      "connectionCount": 10,
-      "obstacleCount": 56,
+      "connectionCount": 19,
+      "obstacleCount": 55,
       "bgaLayer": "bottom",
       "passiveLayer": "top",
-      "passiveOverlayCount": 4,
+      "passiveOverlayCount": 6,
       "bounds": {
         "minX": -6.525,
         "maxX": 6.525,
@@ -2121,11 +2121,11 @@
     {
       "sampleName": "sample142",
       "sourceFile": "circuits/sample142/sample142.circuit.simple-route.json",
-      "connectionCount": 39,
-      "obstacleCount": 94,
+      "connectionCount": 48,
+      "obstacleCount": 97,
       "bgaLayer": "top",
       "passiveLayer": "bottom",
-      "passiveOverlayCount": 4,
+      "passiveOverlayCount": 8,
       "bounds": {
         "minX": -9.325,
         "maxX": 9.325,
@@ -2136,11 +2136,11 @@
     {
       "sampleName": "sample143",
       "sourceFile": "circuits/sample143/sample143.circuit.simple-route.json",
-      "connectionCount": 22,
-      "obstacleCount": 100,
+      "connectionCount": 35,
+      "obstacleCount": 99,
       "bgaLayer": "bottom",
       "passiveLayer": "top",
-      "passiveOverlayCount": 6,
+      "passiveOverlayCount": 10,
       "bounds": {
         "minX": -10.025,
         "maxX": 10.025,
@@ -2151,11 +2151,11 @@
     {
       "sampleName": "sample144",
       "sourceFile": "circuits/sample144/sample144.circuit.simple-route.json",
-      "connectionCount": 2,
-      "obstacleCount": 105,
+      "connectionCount": 27,
+      "obstacleCount": 108,
       "bgaLayer": "top",
       "passiveLayer": "bottom",
-      "passiveOverlayCount": 8,
+      "passiveOverlayCount": 12,
       "bounds": {
         "minX": -6.58,
         "maxX": 6.58,
@@ -2166,11 +2166,11 @@
     {
       "sampleName": "sample145",
       "sourceFile": "circuits/sample145/sample145.circuit.simple-route.json",
-      "connectionCount": 2,
-      "obstacleCount": 140,
+      "connectionCount": 41,
+      "obstacleCount": 141,
       "bgaLayer": "bottom",
       "passiveLayer": "top",
-      "passiveOverlayCount": 10,
+      "passiveOverlayCount": 12,
       "bounds": {
         "minX": -9.325,
         "maxX": 9.325,
@@ -2181,11 +2181,11 @@
     {
       "sampleName": "sample146",
       "sourceFile": "circuits/sample146/sample146.circuit.simple-route.json",
-      "connectionCount": 3,
-      "obstacleCount": 167,
+      "connectionCount": 49,
+      "obstacleCount": 170,
       "bgaLayer": "top",
       "passiveLayer": "bottom",
-      "passiveOverlayCount": 12,
+      "passiveOverlayCount": 16,
       "bounds": {
         "minX": -12.125,
         "maxX": 12.125,
@@ -2196,8 +2196,8 @@
     {
       "sampleName": "sample147",
       "sourceFile": "circuits/sample147/sample147.circuit.simple-route.json",
-      "connectionCount": 11,
-      "obstacleCount": 210,
+      "connectionCount": 64,
+      "obstacleCount": 208,
       "bgaLayer": "bottom",
       "passiveLayer": "top",
       "passiveOverlayCount": 16,
@@ -2211,11 +2211,11 @@
     {
       "sampleName": "sample148",
       "sourceFile": "circuits/sample148/sample148.circuit.simple-route.json",
-      "connectionCount": 3,
+      "connectionCount": 12,
       "obstacleCount": 48,
       "bgaLayer": "top",
       "passiveLayer": "bottom",
-      "passiveOverlayCount": 4,
+      "passiveOverlayCount": 6,
       "bounds": {
         "minX": -5.38,
         "maxX": 5.38,
@@ -2226,11 +2226,11 @@
     {
       "sampleName": "sample149",
       "sourceFile": "circuits/sample149/sample149.circuit.simple-route.json",
-      "connectionCount": 9,
+      "connectionCount": 25,
       "obstacleCount": 74,
       "bgaLayer": "bottom",
       "passiveLayer": "top",
-      "passiveOverlayCount": 6,
+      "passiveOverlayCount": 8,
       "bounds": {
         "minX": -7.225,
         "maxX": 7.225,
@@ -2241,8 +2241,8 @@
     {
       "sampleName": "sample150",
       "sourceFile": "circuits/sample150/sample150.circuit.simple-route.json",
-      "connectionCount": 10,
-      "obstacleCount": 94,
+      "connectionCount": 27,
+      "obstacleCount": 91,
       "bgaLayer": "top",
       "passiveLayer": "bottom",
       "passiveOverlayCount": 8,
@@ -2256,11 +2256,11 @@
     {
       "sampleName": "sample151",
       "sourceFile": "circuits/sample151/sample151.circuit.simple-route.json",
-      "connectionCount": 10,
-      "obstacleCount": 118,
+      "connectionCount": 36,
+      "obstacleCount": 117,
       "bgaLayer": "bottom",
       "passiveLayer": "top",
-      "passiveOverlayCount": 10,
+      "passiveOverlayCount": 12,
       "bounds": {
         "minX": -10.025,
         "maxX": 10.025,
@@ -2271,8 +2271,8 @@
     {
       "sampleName": "sample152",
       "sourceFile": "circuits/sample152/sample152.circuit.simple-route.json",
-      "connectionCount": 3,
-      "obstacleCount": 133,
+      "connectionCount": 31,
+      "obstacleCount": 131,
       "bgaLayer": "top",
       "passiveLayer": "bottom",
       "passiveOverlayCount": 8,
@@ -2286,11 +2286,11 @@
     {
       "sampleName": "sample153",
       "sourceFile": "circuits/sample153/sample153.circuit.simple-route.json",
-      "connectionCount": 5,
-      "obstacleCount": 169,
+      "connectionCount": 46,
+      "obstacleCount": 167,
       "bgaLayer": "bottom",
       "passiveLayer": "top",
-      "passiveOverlayCount": 14,
+      "passiveOverlayCount": 16,
       "bounds": {
         "minX": -13.525,
         "maxX": 13.525,
@@ -2301,8 +2301,8 @@
     {
       "sampleName": "sample154",
       "sourceFile": "circuits/sample154/sample154.circuit.simple-route.json",
-      "connectionCount": 6,
-      "obstacleCount": 209,
+      "connectionCount": 61,
+      "obstacleCount": 205,
       "bgaLayer": "top",
       "passiveLayer": "bottom",
       "passiveOverlayCount": 16,
@@ -2316,11 +2316,11 @@
     {
       "sampleName": "sample155",
       "sourceFile": "circuits/sample155/sample155.circuit.simple-route.json",
-      "connectionCount": 4,
-      "obstacleCount": 53,
+      "connectionCount": 19,
+      "obstacleCount": 55,
       "bgaLayer": "bottom",
       "passiveLayer": "top",
-      "passiveOverlayCount": 4,
+      "passiveOverlayCount": 6,
       "bounds": {
         "minX": -5.38,
         "maxX": 5.38,
@@ -2331,11 +2331,11 @@
     {
       "sampleName": "sample156",
       "sourceFile": "circuits/sample156/sample156.circuit.simple-route.json",
-      "connectionCount": 2,
-      "obstacleCount": 69,
+      "connectionCount": 21,
+      "obstacleCount": 70,
       "bgaLayer": "top",
       "passiveLayer": "bottom",
-      "passiveOverlayCount": 6,
+      "passiveOverlayCount": 8,
       "bounds": {
         "minX": -5.825,
         "maxX": 5.825,
@@ -2346,8 +2346,8 @@
     {
       "sampleName": "sample157",
       "sourceFile": "circuits/sample157/sample157.circuit.simple-route.json",
-      "connectionCount": 9,
-      "obstacleCount": 92,
+      "connectionCount": 26,
+      "obstacleCount": 90,
       "bgaLayer": "bottom",
       "passiveLayer": "top",
       "passiveOverlayCount": 8,
@@ -2361,11 +2361,11 @@
     {
       "sampleName": "sample158",
       "sourceFile": "circuits/sample158/sample158.circuit.simple-route.json",
-      "connectionCount": 65,
+      "connectionCount": 79,
       "obstacleCount": 160,
       "bgaLayer": "top",
       "passiveLayer": "bottom",
-      "passiveOverlayCount": 10,
+      "passiveOverlayCount": 12,
       "bounds": {
         "minX": -14.925,
         "maxX": 14.925,
@@ -2376,8 +2376,8 @@
     {
       "sampleName": "sample159",
       "sourceFile": "circuits/sample159/sample159.circuit.simple-route.json",
-      "connectionCount": 19,
-      "obstacleCount": 156,
+      "connectionCount": 50,
+      "obstacleCount": 150,
       "bgaLayer": "bottom",
       "passiveLayer": "top",
       "passiveOverlayCount": 14,
@@ -2391,8 +2391,8 @@
     {
       "sampleName": "sample160",
       "sourceFile": "circuits/sample160/sample160.circuit.simple-route.json",
-      "connectionCount": 30,
-      "obstacleCount": 192,
+      "connectionCount": 66,
+      "obstacleCount": 187,
       "bgaLayer": "top",
       "passiveLayer": "bottom",
       "passiveOverlayCount": 16,
@@ -2406,7 +2406,7 @@
     {
       "sampleName": "sample161",
       "sourceFile": "circuits/sample161/sample161.circuit.simple-route.json",
-      "connectionCount": 1,
+      "connectionCount": 32,
       "obstacleCount": 176,
       "bgaLayer": "bottom",
       "passiveLayer": "top",
@@ -2421,11 +2421,11 @@
     {
       "sampleName": "sample162",
       "sourceFile": "circuits/sample162/sample162.circuit.simple-route.json",
-      "connectionCount": 9,
-      "obstacleCount": 55,
+      "connectionCount": 21,
+      "obstacleCount": 57,
       "bgaLayer": "top",
       "passiveLayer": "bottom",
-      "passiveOverlayCount": 4,
+      "passiveOverlayCount": 8,
       "bounds": {
         "minX": -6.525,
         "maxX": 6.525,
@@ -2436,11 +2436,11 @@
     {
       "sampleName": "sample163",
       "sourceFile": "circuits/sample163/sample163.circuit.simple-route.json",
-      "connectionCount": 44,
-      "obstacleCount": 100,
+      "connectionCount": 52,
+      "obstacleCount": 101,
       "bgaLayer": "bottom",
       "passiveLayer": "top",
-      "passiveOverlayCount": 6,
+      "passiveOverlayCount": 8,
       "bounds": {
         "minX": -9.325,
         "maxX": 9.325,
@@ -2451,7 +2451,7 @@
     {
       "sampleName": "sample164",
       "sourceFile": "circuits/sample164/sample164.circuit.simple-route.json",
-      "connectionCount": 1,
+      "connectionCount": 27,
       "obstacleCount": 91,
       "bgaLayer": "top",
       "passiveLayer": "bottom",
@@ -2466,8 +2466,8 @@
     {
       "sampleName": "sample165",
       "sourceFile": "circuits/sample165/sample165.circuit.simple-route.json",
-      "connectionCount": 4,
-      "obstacleCount": 108,
+      "connectionCount": 25,
+      "obstacleCount": 106,
       "bgaLayer": "bottom",
       "passiveLayer": "top",
       "passiveOverlayCount": 10,
@@ -2481,11 +2481,11 @@
     {
       "sampleName": "sample166",
       "sourceFile": "circuits/sample166/sample166.circuit.simple-route.json",
-      "connectionCount": 26,
-      "obstacleCount": 156,
+      "connectionCount": 44,
+      "obstacleCount": 144,
       "bgaLayer": "top",
       "passiveLayer": "bottom",
-      "passiveOverlayCount": 14,
+      "passiveOverlayCount": 12,
       "bounds": {
         "minX": -15.625,
         "maxX": 15.625,
@@ -2496,11 +2496,11 @@
     {
       "sampleName": "sample167",
       "sourceFile": "circuits/sample167/sample167.circuit.simple-route.json",
-      "connectionCount": 31,
-      "obstacleCount": 188,
+      "connectionCount": 59,
+      "obstacleCount": 180,
       "bgaLayer": "bottom",
       "passiveLayer": "top",
-      "passiveOverlayCount": 14,
+      "passiveOverlayCount": 16,
       "bounds": {
         "minX": -17.725,
         "maxX": 17.725,
@@ -2511,7 +2511,7 @@
     {
       "sampleName": "sample168",
       "sourceFile": "circuits/sample168/sample168.circuit.simple-route.json",
-      "connectionCount": 0,
+      "connectionCount": 36,
       "obstacleCount": 180,
       "bgaLayer": "top",
       "passiveLayer": "bottom",
@@ -2526,7 +2526,7 @@
     {
       "sampleName": "sample169",
       "sourceFile": "circuits/sample169/sample169.circuit.simple-route.json",
-      "connectionCount": 0,
+      "connectionCount": 14,
       "obstacleCount": 50,
       "bgaLayer": "bottom",
       "passiveLayer": "top",
@@ -2541,8 +2541,8 @@
     {
       "sampleName": "sample170",
       "sourceFile": "circuits/sample170/sample170.circuit.simple-route.json",
-      "connectionCount": 15,
-      "obstacleCount": 83,
+      "connectionCount": 32,
+      "obstacleCount": 81,
       "bgaLayer": "top",
       "passiveLayer": "bottom",
       "passiveOverlayCount": 8,
@@ -2556,7 +2556,7 @@
     {
       "sampleName": "sample171",
       "sourceFile": "circuits/sample171/sample171.circuit.simple-route.json",
-      "connectionCount": 1,
+      "connectionCount": 26,
       "obstacleCount": 90,
       "bgaLayer": "bottom",
       "passiveLayer": "top",
@@ -2571,11 +2571,11 @@
     {
       "sampleName": "sample172",
       "sourceFile": "circuits/sample172/sample172.circuit.simple-route.json",
-      "connectionCount": 26,
-      "obstacleCount": 132,
+      "connectionCount": 43,
+      "obstacleCount": 124,
       "bgaLayer": "top",
       "passiveLayer": "bottom",
-      "passiveOverlayCount": 12,
+      "passiveOverlayCount": 10,
       "bounds": {
         "minX": -12.125,
         "maxX": 12.125,
@@ -2586,11 +2586,11 @@
     {
       "sampleName": "sample173",
       "sourceFile": "circuits/sample173/sample173.circuit.simple-route.json",
-      "connectionCount": 76,
-      "obstacleCount": 188,
+      "connectionCount": 87,
+      "obstacleCount": 187,
       "bgaLayer": "bottom",
       "passiveLayer": "top",
-      "passiveOverlayCount": 6,
+      "passiveOverlayCount": 10,
       "bounds": {
         "minX": -17.025,
         "maxX": 17.025,
@@ -2601,11 +2601,11 @@
     {
       "sampleName": "sample174",
       "sourceFile": "circuits/sample174/sample174.circuit.simple-route.json",
-      "connectionCount": 1,
-      "obstacleCount": 151,
+      "connectionCount": 34,
+      "obstacleCount": 155,
       "bgaLayer": "top",
       "passiveLayer": "bottom",
-      "passiveOverlayCount": 8,
+      "passiveOverlayCount": 12,
       "bounds": {
         "minX": -7.38,
         "maxX": 7.38,
@@ -2616,11 +2616,11 @@
     {
       "sampleName": "sample175",
       "sourceFile": "circuits/sample175/sample175.circuit.simple-route.json",
-      "connectionCount": 0,
-      "obstacleCount": 180,
+      "connectionCount": 42,
+      "obstacleCount": 186,
       "bgaLayer": "bottom",
       "passiveLayer": "top",
-      "passiveOverlayCount": 10,
+      "passiveOverlayCount": 16,
       "bounds": {
         "minX": -7.925,
         "maxX": 7.925,
@@ -2631,11 +2631,11 @@
     {
       "sampleName": "sample176",
       "sourceFile": "circuits/sample176/sample176.circuit.simple-route.json",
-      "connectionCount": 7,
+      "connectionCount": 16,
       "obstacleCount": 52,
       "bgaLayer": "top",
       "passiveLayer": "bottom",
-      "passiveOverlayCount": 2,
+      "passiveOverlayCount": 4,
       "bounds": {
         "minX": -5.38,
         "maxX": 5.38,
@@ -2646,11 +2646,11 @@
     {
       "sampleName": "sample177",
       "sourceFile": "circuits/sample177/sample177.circuit.simple-route.json",
-      "connectionCount": 2,
-      "obstacleCount": 68,
+      "connectionCount": 20,
+      "obstacleCount": 69,
       "bgaLayer": "bottom",
       "passiveLayer": "top",
-      "passiveOverlayCount": 4,
+      "passiveOverlayCount": 6,
       "bounds": {
         "minX": -5.825,
         "maxX": 5.825,
@@ -2661,11 +2661,11 @@
     {
       "sampleName": "sample178",
       "sourceFile": "circuits/sample178/sample178.circuit.simple-route.json",
-      "connectionCount": 60,
-      "obstacleCount": 129,
+      "connectionCount": 68,
+      "obstacleCount": 132,
       "bgaLayer": "top",
       "passiveLayer": "bottom",
-      "passiveOverlayCount": 4,
+      "passiveOverlayCount": 8,
       "bounds": {
         "minX": -12.125,
         "maxX": 12.125,
@@ -2676,11 +2676,11 @@
     {
       "sampleName": "sample179",
       "sourceFile": "circuits/sample179/sample179.circuit.simple-route.json",
-      "connectionCount": 1,
-      "obstacleCount": 103,
+      "connectionCount": 26,
+      "obstacleCount": 107,
       "bgaLayer": "bottom",
       "passiveLayer": "top",
-      "passiveOverlayCount": 6,
+      "passiveOverlayCount": 10,
       "bounds": {
         "minX": -6.58,
         "maxX": 6.58,
@@ -2691,11 +2691,11 @@
     {
       "sampleName": "sample180",
       "sourceFile": "circuits/sample180/sample180.circuit.simple-route.json",
-      "connectionCount": 1,
-      "obstacleCount": 125,
+      "connectionCount": 29,
+      "obstacleCount": 129,
       "bgaLayer": "top",
       "passiveLayer": "bottom",
-      "passiveOverlayCount": 8,
+      "passiveOverlayCount": 12,
       "bounds": {
         "minX": -6.98,
         "maxX": 6.98,
@@ -2706,11 +2706,11 @@
     {
       "sampleName": "sample181",
       "sourceFile": "circuits/sample181/sample181.circuit.simple-route.json",
-      "connectionCount": 1,
-      "obstacleCount": 156,
+      "connectionCount": 40,
+      "obstacleCount": 161,
       "bgaLayer": "bottom",
       "passiveLayer": "top",
-      "passiveOverlayCount": 10,
+      "passiveOverlayCount": 16,
       "bounds": {
         "minX": -7.38,
         "maxX": 7.38,
@@ -2721,11 +2721,11 @@
     {
       "sampleName": "sample182",
       "sourceFile": "circuits/sample182/sample182.circuit.simple-route.json",
-      "connectionCount": 2,
-      "obstacleCount": 194,
+      "connectionCount": 54,
+      "obstacleCount": 198,
       "bgaLayer": "top",
       "passiveLayer": "bottom",
-      "passiveOverlayCount": 12,
+      "passiveOverlayCount": 16,
       "bounds": {
         "minX": -10.025,
         "maxX": 10.025,
@@ -2736,11 +2736,11 @@
     {
       "sampleName": "sample183",
       "sourceFile": "circuits/sample183/sample183.circuit.simple-route.json",
-      "connectionCount": 19,
-      "obstacleCount": 61,
+      "connectionCount": 24,
+      "obstacleCount": 60,
       "bgaLayer": "bottom",
       "passiveLayer": "top",
-      "passiveOverlayCount": 2,
+      "passiveOverlayCount": 4,
       "bounds": {
         "minX": -6.525,
         "maxX": 6.525,
@@ -2751,7 +2751,7 @@
     {
       "sampleName": "sample184",
       "sourceFile": "circuits/sample184/sample184.circuit.simple-route.json",
-      "connectionCount": 49,
+      "connectionCount": 53,
       "obstacleCount": 102,
       "bgaLayer": "top",
       "passiveLayer": "bottom",
@@ -2766,11 +2766,11 @@
     {
       "sampleName": "sample185",
       "sourceFile": "circuits/sample185/sample185.circuit.simple-route.json",
-      "connectionCount": 37,
-      "obstacleCount": 114,
+      "connectionCount": 47,
+      "obstacleCount": 111,
       "bgaLayer": "bottom",
       "passiveLayer": "top",
-      "passiveOverlayCount": 6,
+      "passiveOverlayCount": 8,
       "bounds": {
         "minX": -10.725,
         "maxX": 10.725,
@@ -2781,11 +2781,11 @@
     {
       "sampleName": "sample186",
       "sourceFile": "circuits/sample186/sample186.circuit.simple-route.json",
-      "connectionCount": 2,
-      "obstacleCount": 111,
+      "connectionCount": 34,
+      "obstacleCount": 115,
       "bgaLayer": "top",
       "passiveLayer": "bottom",
-      "passiveOverlayCount": 8,
+      "passiveOverlayCount": 12,
       "bounds": {
         "minX": -9.325,
         "maxX": 9.325,
@@ -2796,7 +2796,7 @@
     {
       "sampleName": "sample187",
       "sourceFile": "circuits/sample187/sample187.circuit.simple-route.json",
-      "connectionCount": 0,
+      "connectionCount": 35,
       "obstacleCount": 135,
       "bgaLayer": "bottom",
       "passiveLayer": "top",
@@ -2811,11 +2811,11 @@
     {
       "sampleName": "sample188",
       "sourceFile": "circuits/sample188/sample188.circuit.simple-route.json",
-      "connectionCount": 4,
-      "obstacleCount": 164,
+      "connectionCount": 44,
+      "obstacleCount": 165,
       "bgaLayer": "top",
       "passiveLayer": "bottom",
-      "passiveOverlayCount": 12,
+      "passiveOverlayCount": 16,
       "bounds": {
         "minX": -9.325,
         "maxX": 9.325,
@@ -2826,11 +2826,11 @@
     {
       "sampleName": "sample189",
       "sourceFile": "circuits/sample189/sample189.circuit.simple-route.json",
-      "connectionCount": 2,
-      "obstacleCount": 200,
+      "connectionCount": 58,
+      "obstacleCount": 202,
       "bgaLayer": "bottom",
       "passiveLayer": "top",
-      "passiveOverlayCount": 14,
+      "passiveOverlayCount": 18,
       "bounds": {
         "minX": -11.425,
         "maxX": 11.425,
@@ -2841,11 +2841,11 @@
     {
       "sampleName": "sample190",
       "sourceFile": "circuits/sample190/sample190.circuit.simple-route.json",
-      "connectionCount": 2,
+      "connectionCount": 15,
       "obstacleCount": 51,
       "bgaLayer": "top",
       "passiveLayer": "bottom",
-      "passiveOverlayCount": 4,
+      "passiveOverlayCount": 6,
       "bounds": {
         "minX": -5.38,
         "maxX": 5.38,
@@ -2856,11 +2856,11 @@
     {
       "sampleName": "sample191",
       "sourceFile": "circuits/sample191/sample191.circuit.simple-route.json",
-      "connectionCount": 22,
-      "obstacleCount": 83,
+      "connectionCount": 35,
+      "obstacleCount": 84,
       "bgaLayer": "bottom",
       "passiveLayer": "top",
-      "passiveOverlayCount": 4,
+      "passiveOverlayCount": 8,
       "bounds": {
         "minX": -7.925,
         "maxX": 7.925,
@@ -2871,11 +2871,11 @@
     {
       "sampleName": "sample192",
       "sourceFile": "circuits/sample192/sample192.circuit.simple-route.json",
-      "connectionCount": 23,
-      "obstacleCount": 105,
+      "connectionCount": 38,
+      "obstacleCount": 102,
       "bgaLayer": "top",
       "passiveLayer": "bottom",
-      "passiveOverlayCount": 6,
+      "passiveOverlayCount": 8,
       "bounds": {
         "minX": -10.025,
         "maxX": 10.025,
@@ -2886,11 +2886,11 @@
     {
       "sampleName": "sample193",
       "sourceFile": "circuits/sample193/sample193.circuit.simple-route.json",
-      "connectionCount": 50,
-      "obstacleCount": 146,
+      "connectionCount": 62,
+      "obstacleCount": 143,
       "bgaLayer": "bottom",
       "passiveLayer": "top",
-      "passiveOverlayCount": 8,
+      "passiveOverlayCount": 10,
       "bounds": {
         "minX": -13.525,
         "maxX": 13.525,
@@ -2901,11 +2901,11 @@
     {
       "sampleName": "sample194",
       "sourceFile": "circuits/sample194/sample194.circuit.simple-route.json",
-      "connectionCount": 3,
+      "connectionCount": 37,
       "obstacleCount": 137,
       "bgaLayer": "top",
       "passiveLayer": "bottom",
-      "passiveOverlayCount": 8,
+      "passiveOverlayCount": 10,
       "bounds": {
         "minX": -9.325,
         "maxX": 9.325,
@@ -2916,8 +2916,8 @@
     {
       "sampleName": "sample195",
       "sourceFile": "circuits/sample195/sample195.circuit.simple-route.json",
-      "connectionCount": 10,
-      "obstacleCount": 174,
+      "connectionCount": 48,
+      "obstacleCount": 169,
       "bgaLayer": "bottom",
       "passiveLayer": "top",
       "passiveOverlayCount": 14,
@@ -2931,11 +2931,11 @@
     {
       "sampleName": "sample196",
       "sourceFile": "circuits/sample196/sample196.circuit.simple-route.json",
-      "connectionCount": 15,
-      "obstacleCount": 211,
+      "connectionCount": 68,
+      "obstacleCount": 212,
       "bgaLayer": "top",
       "passiveLayer": "bottom",
-      "passiveOverlayCount": 16,
+      "passiveOverlayCount": 20,
       "bounds": {
         "minX": -13.525,
         "maxX": 13.525,
@@ -2946,11 +2946,11 @@
     {
       "sampleName": "sample197",
       "sourceFile": "circuits/sample197/sample197.circuit.simple-route.json",
-      "connectionCount": 8,
+      "connectionCount": 20,
       "obstacleCount": 56,
       "bgaLayer": "bottom",
       "passiveLayer": "top",
-      "passiveOverlayCount": 4,
+      "passiveOverlayCount": 6,
       "bounds": {
         "minX": -5.38,
         "maxX": 5.38,
@@ -2961,11 +2961,11 @@
     {
       "sampleName": "sample198",
       "sourceFile": "circuits/sample198/sample198.circuit.simple-route.json",
-      "connectionCount": 6,
-      "obstacleCount": 71,
+      "connectionCount": 21,
+      "obstacleCount": 70,
       "bgaLayer": "top",
       "passiveLayer": "bottom",
-      "passiveOverlayCount": 6,
+      "passiveOverlayCount": 8,
       "bounds": {
         "minX": -5.825,
         "maxX": 5.825,
@@ -2976,8 +2976,8 @@
     {
       "sampleName": "sample199",
       "sourceFile": "circuits/sample199/sample199.circuit.simple-route.json",
-      "connectionCount": 10,
-      "obstacleCount": 99,
+      "connectionCount": 32,
+      "obstacleCount": 96,
       "bgaLayer": "bottom",
       "passiveLayer": "top",
       "passiveOverlayCount": 8,
@@ -2991,11 +2991,11 @@
     {
       "sampleName": "sample200",
       "sourceFile": "circuits/sample200/sample200.circuit.simple-route.json",
-      "connectionCount": 3,
+      "connectionCount": 30,
       "obstacleCount": 111,
       "bgaLayer": "top",
       "passiveLayer": "bottom",
-      "passiveOverlayCount": 10,
+      "passiveOverlayCount": 12,
       "bounds": {
         "minX": -6.58,
         "maxX": 6.58,

@@ -1,10 +1,11 @@
 export default () => (
-  <board width="35.45mm" height="35.45mm" routingDisabled>
+  <board width="35.45mm" height="35.45mm" routingDisabled schematicDisabled>
     <chip
       name="BGA"
       pcbX="0mm"
       pcbY="0mm"
       layer="bottom"
+      pinLabels={{pin001: "pin001", pin002: "pin002", pin003: "pin003", pin004: "pin004", pin005: "pin005", pin006: "pin006", pin007: "pin007", pin008: "pin008", pin009: "pin009", pin010: "pin010", pin011: "pin011", pin012: "pin012", pin013: "pin013", pin014: "pin014", pin015: "pin015", pin016: "pin016", pin017: "pin017", pin018: "pin018", pin019: "pin019", pin020: "pin020", pin021: "pin021", pin022: "pin022", pin023: "pin023", pin024: "pin024", pin025: "pin025", pin026: "pin026", pin027: "pin027", pin028: "pin028", pin029: "pin029", pin030: "pin030", pin031: "pin031", pin032: "pin032", pin033: "pin033", pin034: "pin034", pin035: "pin035", pin036: "pin036", pin037: "pin037", pin038: "pin038", pin039: "pin039", pin040: "pin040", pin041: "pin041", pin042: "pin042", pin043: "pin043", pin044: "pin044", pin045: "pin045", pin046: "pin046", pin047: "pin047", pin048: "pin048", pin049: "pin049", pin050: "pin050", pin051: "pin051", pin052: "pin052", pin053: "pin053", pin054: "pin054", pin055: "pin055", pin056: "pin056", pin057: "pin057", pin058: "pin058", pin059: "pin059", pin060: "pin060", pin061: "pin061", pin062: "pin062", pin063: "pin063", pin064: "pin064", pin065: "pin065", pin066: "pin066", pin067: "pin067", pin068: "pin068", pin069: "pin069", pin070: "pin070", pin071: "pin071", pin072: "pin072", pin073: "pin073", pin074: "pin074", pin075: "pin075", pin076: "pin076", pin077: "pin077", pin078: "pin078", pin079: "pin079", pin080: "pin080", pin081: "pin081", pin082: "pin082", pin083: "pin083", pin084: "pin084", pin085: "pin085", pin086: "pin086", pin087: "pin087", pin088: "pin088", pin089: "pin089", pin090: "pin090", pin091: "pin091", pin092: "pin092", pin093: "pin093", pin094: "pin094", pin095: "pin095", pin096: "pin096", pin097: "pin097", pin098: "pin098", pin099: "pin099", pin100: "pin100", pin101: "pin101", pin102: "pin102", pin103: "pin103", pin104: "pin104", pin105: "pin105", pin106: "pin106", pin107: "pin107", pin108: "pin108", pin109: "pin109", pin110: "pin110", pin111: "pin111", pin112: "pin112", pin113: "pin113", pin114: "pin114", pin115: "pin115", pin116: "pin116", pin117: "pin117", pin118: "pin118", pin119: "pin119", pin120: "pin120", pin121: "pin121"}}
       footprint={
         <footprint>
         <smtpad
@@ -1224,20 +1225,8 @@ export default () => (
         name="TP009"
         footprintVariant="pad"
         padShape="rect"
-        pcbX="7.7mm"
+        pcbX="-7.7mm"
         pcbY="-17.475mm"
-        width="0.85mm"
-        height="0.5mm"
-        layer="bottom"
-        
-        pcbPositionMode="relative_to_board_anchor"
-      />
-      <testpoint
-        name="TP011"
-        footprintVariant="pad"
-        padShape="rect"
-        pcbX="9.1mm"
-        pcbY="17.475mm"
         width="0.85mm"
         height="0.5mm"
         layer="bottom"
@@ -1248,292 +1237,16 @@ export default () => (
         name="TP013"
         footprintVariant="pad"
         padShape="rect"
-        pcbX="-17.475mm"
-        pcbY="2.1mm"
-        width="0.5mm"
-        height="0.85mm"
+        pcbX="7.7mm"
+        pcbY="-17.475mm"
+        width="0.85mm"
+        height="0.5mm"
         layer="bottom"
         
         pcbPositionMode="relative_to_board_anchor"
       />
       <testpoint
         name="TP014"
-        footprintVariant="pad"
-        padShape="rect"
-        pcbX="10.5mm"
-        pcbY="17.475mm"
-        width="0.85mm"
-        height="0.5mm"
-        layer="bottom"
-        
-        pcbPositionMode="relative_to_board_anchor"
-      />
-      <testpoint
-        name="TP016"
-        footprintVariant="pad"
-        padShape="rect"
-        pcbX="17.475mm"
-        pcbY="4.9mm"
-        width="0.5mm"
-        height="0.85mm"
-        layer="bottom"
-        
-        pcbPositionMode="relative_to_board_anchor"
-      />
-      <testpoint
-        name="TP018"
-        footprintVariant="pad"
-        padShape="rect"
-        pcbX="17.475mm"
-        pcbY="6.3mm"
-        width="0.5mm"
-        height="0.85mm"
-        layer="bottom"
-        
-        pcbPositionMode="relative_to_board_anchor"
-      />
-      <testpoint
-        name="TP020"
-        footprintVariant="pad"
-        padShape="rect"
-        pcbX="6.3mm"
-        pcbY="17.475mm"
-        width="0.85mm"
-        height="0.5mm"
-        layer="bottom"
-        
-        pcbPositionMode="relative_to_board_anchor"
-      />
-      <testpoint
-        name="TP027"
-        footprintVariant="pad"
-        padShape="rect"
-        pcbX="10.5mm"
-        pcbY="-17.475mm"
-        width="0.85mm"
-        height="0.5mm"
-        layer="bottom"
-        
-        pcbPositionMode="relative_to_board_anchor"
-      />
-      <testpoint
-        name="TP029"
-        footprintVariant="pad"
-        padShape="rect"
-        pcbX="-16.1mm"
-        pcbY="17.475mm"
-        width="0.85mm"
-        height="0.5mm"
-        layer="bottom"
-        
-        pcbPositionMode="relative_to_board_anchor"
-      />
-      <testpoint
-        name="TP030"
-        footprintVariant="pad"
-        padShape="rect"
-        pcbX="17.475mm"
-        pcbY="-7.7mm"
-        width="0.5mm"
-        height="0.85mm"
-        layer="bottom"
-        
-        pcbPositionMode="relative_to_board_anchor"
-      />
-      <testpoint
-        name="TP031"
-        footprintVariant="pad"
-        padShape="rect"
-        pcbX="9.1mm"
-        pcbY="-17.475mm"
-        width="0.85mm"
-        height="0.5mm"
-        layer="bottom"
-        
-        pcbPositionMode="relative_to_board_anchor"
-      />
-      <testpoint
-        name="TP032"
-        footprintVariant="pad"
-        padShape="rect"
-        pcbX="-17.475mm"
-        pcbY="9.1mm"
-        width="0.5mm"
-        height="0.85mm"
-        layer="bottom"
-        
-        pcbPositionMode="relative_to_board_anchor"
-      />
-      <testpoint
-        name="TP033"
-        footprintVariant="pad"
-        padShape="rect"
-        pcbX="17.475mm"
-        pcbY="9.1mm"
-        width="0.5mm"
-        height="0.85mm"
-        layer="bottom"
-        
-        pcbPositionMode="relative_to_board_anchor"
-      />
-      <testpoint
-        name="TP034"
-        footprintVariant="pad"
-        padShape="rect"
-        pcbX="17.475mm"
-        pcbY="13.3mm"
-        width="0.5mm"
-        height="0.85mm"
-        layer="bottom"
-        
-        pcbPositionMode="relative_to_board_anchor"
-      />
-      <testpoint
-        name="TP035"
-        footprintVariant="pad"
-        padShape="rect"
-        pcbX="0.7mm"
-        pcbY="17.475mm"
-        width="0.85mm"
-        height="0.5mm"
-        layer="bottom"
-        
-        pcbPositionMode="relative_to_board_anchor"
-      />
-      <testpoint
-        name="TP039"
-        footprintVariant="pad"
-        padShape="rect"
-        pcbX="-17.475mm"
-        pcbY="4.9mm"
-        width="0.5mm"
-        height="0.85mm"
-        layer="bottom"
-        
-        pcbPositionMode="relative_to_board_anchor"
-      />
-      <testpoint
-        name="TP040"
-        footprintVariant="pad"
-        padShape="rect"
-        pcbX="-14.7mm"
-        pcbY="17.475mm"
-        width="0.85mm"
-        height="0.5mm"
-        layer="bottom"
-        
-        pcbPositionMode="relative_to_board_anchor"
-      />
-      <testpoint
-        name="TP041"
-        footprintVariant="pad"
-        padShape="rect"
-        pcbX="17.475mm"
-        pcbY="-10.5mm"
-        width="0.5mm"
-        height="0.85mm"
-        layer="bottom"
-        
-        pcbPositionMode="relative_to_board_anchor"
-      />
-      <testpoint
-        name="TP043"
-        footprintVariant="pad"
-        padShape="rect"
-        pcbX="-7.7mm"
-        pcbY="-17.475mm"
-        width="0.85mm"
-        height="0.5mm"
-        layer="bottom"
-        
-        pcbPositionMode="relative_to_board_anchor"
-      />
-      <testpoint
-        name="TP046"
-        footprintVariant="pad"
-        padShape="rect"
-        pcbX="-17.475mm"
-        pcbY="-11.9mm"
-        width="0.5mm"
-        height="0.85mm"
-        layer="bottom"
-        
-        pcbPositionMode="relative_to_board_anchor"
-      />
-      <testpoint
-        name="TP052"
-        footprintVariant="pad"
-        padShape="rect"
-        pcbX="7.7mm"
-        pcbY="17.475mm"
-        width="0.85mm"
-        height="0.5mm"
-        layer="bottom"
-        
-        pcbPositionMode="relative_to_board_anchor"
-      />
-      <testpoint
-        name="TP053"
-        footprintVariant="pad"
-        padShape="rect"
-        pcbX="-0.7mm"
-        pcbY="-17.475mm"
-        width="0.85mm"
-        height="0.5mm"
-        layer="bottom"
-        
-        pcbPositionMode="relative_to_board_anchor"
-      />
-      <testpoint
-        name="TP060"
-        footprintVariant="pad"
-        padShape="rect"
-        pcbX="13.3mm"
-        pcbY="17.475mm"
-        width="0.85mm"
-        height="0.5mm"
-        layer="bottom"
-        
-        pcbPositionMode="relative_to_board_anchor"
-      />
-      <testpoint
-        name="TP066"
-        footprintVariant="pad"
-        padShape="rect"
-        pcbX="-0.7mm"
-        pcbY="17.475mm"
-        width="0.85mm"
-        height="0.5mm"
-        layer="bottom"
-        
-        pcbPositionMode="relative_to_board_anchor"
-      />
-      <testpoint
-        name="TP077"
-        footprintVariant="pad"
-        padShape="rect"
-        pcbX="17.475mm"
-        pcbY="16.1mm"
-        width="0.5mm"
-        height="0.85mm"
-        layer="bottom"
-        
-        pcbPositionMode="relative_to_board_anchor"
-      />
-      <testpoint
-        name="TP078"
-        footprintVariant="pad"
-        padShape="rect"
-        pcbX="-10.5mm"
-        pcbY="17.475mm"
-        width="0.85mm"
-        height="0.5mm"
-        layer="bottom"
-        
-        pcbPositionMode="relative_to_board_anchor"
-      />
-      <testpoint
-        name="TP080"
         footprintVariant="pad"
         padShape="rect"
         pcbX="17.475mm"
@@ -1545,11 +1258,11 @@ export default () => (
         pcbPositionMode="relative_to_board_anchor"
       />
       <testpoint
-        name="TP081"
+        name="TP016"
         footprintVariant="pad"
         padShape="rect"
-        pcbX="6.3mm"
-        pcbY="-17.475mm"
+        pcbX="-10.5mm"
+        pcbY="17.475mm"
         width="0.85mm"
         height="0.5mm"
         layer="bottom"
@@ -1557,7 +1270,7 @@ export default () => (
         pcbPositionMode="relative_to_board_anchor"
       />
       <testpoint
-        name="TP082"
+        name="TP018"
         footprintVariant="pad"
         padShape="rect"
         pcbX="-17.475mm"
@@ -1569,10 +1282,10 @@ export default () => (
         pcbPositionMode="relative_to_board_anchor"
       />
       <testpoint
-        name="TP091"
+        name="TP029"
         footprintVariant="pad"
         padShape="rect"
-        pcbX="-11.9mm"
+        pcbX="10.5mm"
         pcbY="17.475mm"
         width="0.85mm"
         height="0.5mm"
@@ -1581,7 +1294,7 @@ export default () => (
         pcbPositionMode="relative_to_board_anchor"
       />
       <testpoint
-        name="TP094"
+        name="TP030"
         footprintVariant="pad"
         padShape="rect"
         pcbX="-17.475mm"
@@ -1593,13 +1306,169 @@ export default () => (
         pcbPositionMode="relative_to_board_anchor"
       />
       <testpoint
-        name="TP095"
+        name="TP031"
         footprintVariant="pad"
         padShape="rect"
         pcbX="17.475mm"
-        pcbY="-14.7mm"
+        pcbY="16.1mm"
         width="0.5mm"
         height="0.85mm"
+        layer="bottom"
+        
+        pcbPositionMode="relative_to_board_anchor"
+      />
+      <testpoint
+        name="TP033"
+        footprintVariant="pad"
+        padShape="rect"
+        pcbX="13.3mm"
+        pcbY="17.475mm"
+        width="0.85mm"
+        height="0.5mm"
+        layer="bottom"
+        
+        pcbPositionMode="relative_to_board_anchor"
+      />
+      <testpoint
+        name="TP035"
+        footprintVariant="pad"
+        padShape="rect"
+        pcbX="17.475mm"
+        pcbY="13.3mm"
+        width="0.5mm"
+        height="0.85mm"
+        layer="bottom"
+        
+        pcbPositionMode="relative_to_board_anchor"
+      />
+      <testpoint
+        name="TP039"
+        footprintVariant="pad"
+        padShape="rect"
+        pcbX="-0.7mm"
+        pcbY="-17.475mm"
+        width="0.85mm"
+        height="0.5mm"
+        layer="bottom"
+        
+        pcbPositionMode="relative_to_board_anchor"
+      />
+      <testpoint
+        name="TP040"
+        footprintVariant="pad"
+        padShape="rect"
+        pcbX="10.5mm"
+        pcbY="-17.475mm"
+        width="0.85mm"
+        height="0.5mm"
+        layer="bottom"
+        
+        pcbPositionMode="relative_to_board_anchor"
+      />
+      <testpoint
+        name="TP041"
+        footprintVariant="pad"
+        padShape="rect"
+        pcbX="-11.9mm"
+        pcbY="17.475mm"
+        width="0.85mm"
+        height="0.5mm"
+        layer="bottom"
+        
+        pcbPositionMode="relative_to_board_anchor"
+      />
+      <testpoint
+        name="TP043"
+        footprintVariant="pad"
+        padShape="rect"
+        pcbX="-0.7mm"
+        pcbY="17.475mm"
+        width="0.85mm"
+        height="0.5mm"
+        layer="bottom"
+        
+        pcbPositionMode="relative_to_board_anchor"
+      />
+      <testpoint
+        name="TP046"
+        footprintVariant="pad"
+        padShape="rect"
+        pcbX="17.475mm"
+        pcbY="-10.5mm"
+        width="0.5mm"
+        height="0.85mm"
+        layer="bottom"
+        
+        pcbPositionMode="relative_to_board_anchor"
+      />
+      <testpoint
+        name="TP060"
+        footprintVariant="pad"
+        padShape="rect"
+        pcbX="9.1mm"
+        pcbY="17.475mm"
+        width="0.85mm"
+        height="0.5mm"
+        layer="bottom"
+        
+        pcbPositionMode="relative_to_board_anchor"
+      />
+      <testpoint
+        name="TP077"
+        footprintVariant="pad"
+        padShape="rect"
+        pcbX="7.7mm"
+        pcbY="17.475mm"
+        width="0.85mm"
+        height="0.5mm"
+        layer="bottom"
+        
+        pcbPositionMode="relative_to_board_anchor"
+      />
+      <testpoint
+        name="TP078"
+        footprintVariant="pad"
+        padShape="rect"
+        pcbX="-17.475mm"
+        pcbY="9.1mm"
+        width="0.5mm"
+        height="0.85mm"
+        layer="bottom"
+        
+        pcbPositionMode="relative_to_board_anchor"
+      />
+      <testpoint
+        name="TP081"
+        footprintVariant="pad"
+        padShape="rect"
+        pcbX="-17.475mm"
+        pcbY="-11.9mm"
+        width="0.5mm"
+        height="0.85mm"
+        layer="bottom"
+        
+        pcbPositionMode="relative_to_board_anchor"
+      />
+      <testpoint
+        name="TP082"
+        footprintVariant="pad"
+        padShape="rect"
+        pcbX="17.475mm"
+        pcbY="4.9mm"
+        width="0.5mm"
+        height="0.85mm"
+        layer="bottom"
+        
+        pcbPositionMode="relative_to_board_anchor"
+      />
+      <testpoint
+        name="TP091"
+        footprintVariant="pad"
+        padShape="rect"
+        pcbX="-16.1mm"
+        pcbY="17.475mm"
+        width="0.85mm"
+        height="0.5mm"
         layer="bottom"
         
         pcbPositionMode="relative_to_board_anchor"
@@ -1608,8 +1477,8 @@ export default () => (
         name="TP095"
         footprintVariant="pad"
         padShape="rect"
-        pcbX="-16.1mm"
-        pcbY="-17.475mm"
+        pcbX="-14.7mm"
+        pcbY="17.475mm"
         width="0.85mm"
         height="0.5mm"
         layer="bottom"
@@ -1620,22 +1489,10 @@ export default () => (
         name="TP096"
         footprintVariant="pad"
         padShape="rect"
-        pcbX="17.475mm"
-        pcbY="-13.3mm"
-        width="0.5mm"
-        height="0.85mm"
-        layer="bottom"
-        
-        pcbPositionMode="relative_to_board_anchor"
-      />
-      <testpoint
-        name="TP096"
-        footprintVariant="pad"
-        padShape="rect"
-        pcbX="17.475mm"
-        pcbY="-0.7mm"
-        width="0.5mm"
-        height="0.85mm"
+        pcbX="9.1mm"
+        pcbY="-17.475mm"
+        width="0.85mm"
+        height="0.5mm"
         layer="bottom"
         
         pcbPositionMode="relative_to_board_anchor"
@@ -1656,58 +1513,22 @@ export default () => (
         name="TP098"
         footprintVariant="pad"
         padShape="rect"
-        pcbX="-9.1mm"
-        pcbY="17.475mm"
-        width="0.85mm"
-        height="0.5mm"
-        layer="bottom"
-        
-        pcbPositionMode="relative_to_board_anchor"
-      />
-      <testpoint
-        name="TP098"
-        footprintVariant="pad"
-        padShape="rect"
-        pcbX="3.5mm"
-        pcbY="-17.475mm"
-        width="0.85mm"
-        height="0.5mm"
-        layer="bottom"
-        
-        pcbPositionMode="relative_to_board_anchor"
-      />
-      <testpoint
-        name="TP099"
-        footprintVariant="pad"
-        padShape="rect"
-        pcbX="2.1mm"
-        pcbY="17.475mm"
-        width="0.85mm"
-        height="0.5mm"
-        layer="bottom"
-        
-        pcbPositionMode="relative_to_board_anchor"
-      />
-      <testpoint
-        name="TP099"
-        footprintVariant="pad"
-        padShape="rect"
-        pcbX="-4.9mm"
-        pcbY="-17.475mm"
-        width="0.85mm"
-        height="0.5mm"
-        layer="bottom"
-        
-        pcbPositionMode="relative_to_board_anchor"
-      />
-      <testpoint
-        name="TP101"
-        footprintVariant="pad"
-        padShape="rect"
         pcbX="-17.475mm"
-        pcbY="10.5mm"
+        pcbY="4.9mm"
         width="0.5mm"
         height="0.85mm"
+        layer="bottom"
+        
+        pcbPositionMode="relative_to_board_anchor"
+      />
+      <testpoint
+        name="TP099"
+        footprintVariant="pad"
+        padShape="rect"
+        pcbX="0.7mm"
+        pcbY="17.475mm"
+        width="0.85mm"
+        height="0.5mm"
         layer="bottom"
         
         pcbPositionMode="relative_to_board_anchor"
@@ -1717,18 +1538,6 @@ export default () => (
         footprintVariant="pad"
         padShape="rect"
         pcbX="17.475mm"
-        pcbY="11.9mm"
-        width="0.5mm"
-        height="0.85mm"
-        layer="bottom"
-        
-        pcbPositionMode="relative_to_board_anchor"
-      />
-      <testpoint
-        name="TP102"
-        footprintVariant="pad"
-        padShape="rect"
-        pcbX="-17.475mm"
         pcbY="6.3mm"
         width="0.5mm"
         height="0.85mm"
@@ -1740,10 +1549,10 @@ export default () => (
         name="TP102"
         footprintVariant="pad"
         padShape="rect"
-        pcbX="-2.1mm"
-        pcbY="17.475mm"
-        width="0.85mm"
-        height="0.5mm"
+        pcbX="-17.475mm"
+        pcbY="2.1mm"
+        width="0.5mm"
+        height="0.85mm"
         layer="bottom"
         
         pcbPositionMode="relative_to_board_anchor"
@@ -1764,22 +1573,10 @@ export default () => (
         name="TP104"
         footprintVariant="pad"
         padShape="rect"
-        pcbX="-17.475mm"
-        pcbY="-16.1mm"
-        width="0.5mm"
-        height="0.85mm"
-        layer="bottom"
-        
-        pcbPositionMode="relative_to_board_anchor"
-      />
-      <testpoint
-        name="TP104"
-        footprintVariant="pad"
-        padShape="rect"
-        pcbX="17.475mm"
-        pcbY="-4.9mm"
-        width="0.5mm"
-        height="0.85mm"
+        pcbX="6.3mm"
+        pcbY="17.475mm"
+        width="0.85mm"
+        height="0.5mm"
         layer="bottom"
         
         pcbPositionMode="relative_to_board_anchor"
@@ -1872,22 +1669,10 @@ export default () => (
         name="TP116"
         footprintVariant="pad"
         padShape="rect"
-        pcbX="3.5mm"
-        pcbY="17.475mm"
-        width="0.85mm"
-        height="0.5mm"
-        layer="bottom"
-        
-        pcbPositionMode="relative_to_board_anchor"
-      />
-      <testpoint
-        name="TP116"
-        footprintVariant="pad"
-        padShape="rect"
-        pcbX="-3.5mm"
-        pcbY="-17.475mm"
-        width="0.85mm"
-        height="0.5mm"
+        pcbX="17.475mm"
+        pcbY="-7.7mm"
+        width="0.5mm"
+        height="0.85mm"
         layer="bottom"
         
         pcbPositionMode="relative_to_board_anchor"
@@ -1908,22 +1693,10 @@ export default () => (
         name="TP118"
         footprintVariant="pad"
         padShape="rect"
-        pcbX="-6.3mm"
-        pcbY="-17.475mm"
-        width="0.85mm"
-        height="0.5mm"
-        layer="bottom"
-        
-        pcbPositionMode="relative_to_board_anchor"
-      />
-      <testpoint
-        name="TP118"
-        footprintVariant="pad"
-        padShape="rect"
-        pcbX="-13.3mm"
-        pcbY="17.475mm"
-        width="0.85mm"
-        height="0.5mm"
+        pcbX="17.475mm"
+        pcbY="9.1mm"
+        width="0.5mm"
+        height="0.85mm"
         layer="bottom"
         
         pcbPositionMode="relative_to_board_anchor"
@@ -1944,19 +1717,7 @@ export default () => (
         name="TP120"
         footprintVariant="pad"
         padShape="rect"
-        pcbX="14.7mm"
-        pcbY="17.475mm"
-        width="0.85mm"
-        height="0.5mm"
-        layer="bottom"
-        
-        pcbPositionMode="relative_to_board_anchor"
-      />
-      <testpoint
-        name="TP120"
-        footprintVariant="pad"
-        padShape="rect"
-        pcbX="2.1mm"
+        pcbX="6.3mm"
         pcbY="-17.475mm"
         width="0.85mm"
         height="0.5mm"
@@ -1976,66 +1737,72 @@ export default () => (
         
         pcbPositionMode="relative_to_board_anchor"
       />
-      <testpoint
-        name="TP121"
-        footprintVariant="pad"
-        padShape="rect"
-        pcbX="17.475mm"
-        pcbY="-9.1mm"
-        width="0.5mm"
-        height="0.85mm"
-        layer="bottom"
-        
-        pcbPositionMode="relative_to_board_anchor"
-      />
-      <trace from=".BGA > .pin013" to=".TP009 > .pin1" />
-      <trace from=".BGA > .pin060" to=".TP011 > .pin1" />
-      <trace from=".BGA > .pin102" to=".TP013 > .pin1" />
-      <trace from=".BGA > .pin029" to=".TP014 > .pin1" />
-      <trace from=".BGA > .pin080" to=".TP015 > .pin1" />
-      <trace from=".BGA > .pin082" to=".TP016 > .pin1" />
-      <trace from=".BGA > .pin101" to=".TP018 > .pin1" />
-      <trace from=".BGA > .pin104" to=".TP020 > .pin1" />
-      <trace from=".BGA > .pin032" to=".TP022 > .pin1" />
-      <trace from=".BGA > .pin040" to=".TP027 > .pin1" />
-      <trace from=".BGA > .pin121" to=".TP028 > .pin1" />
-      <trace from=".BGA > .pin091" to=".TP029 > .pin1" />
-      <trace from=".BGA > .pin116" to=".TP030 > .pin1" />
-      <trace from=".BGA > .pin096" to=".TP031 > .pin1" />
-      <trace from=".BGA > .pin078" to=".TP032 > .pin1" />
-      <trace from=".BGA > .pin118" to=".TP033 > .pin1" />
-      <trace from=".BGA > .pin035" to=".TP034 > .pin1" />
-      <trace from=".BGA > .pin099" to=".TP035 > .pin1" />
-      <trace from=".BGA > .pin053" to=".TP037 > .pin1" />
-      <trace from=".BGA > .pin098" to=".TP039 > .pin1" />
-      <trace from=".BGA > .pin095" to=".TP040 > .pin1" />
-      <trace from=".BGA > .pin046" to=".TP041 > .pin1" />
-      <trace from=".BGA > .pin009" to=".TP043 > .pin1" />
-      <trace from=".BGA > .pin081" to=".TP046 > .pin1" />
-      <trace from=".BGA > .pin077" to=".TP052 > .pin1" />
-      <trace from=".BGA > .pin039" to=".TP053 > .pin1" />
-      <trace from=".BGA > .pin066" to=".TP054 > .pin1" />
-      <trace from=".BGA > .pin094" to=".TP057 > .pin1" />
-      <trace from=".BGA > .pin033" to=".TP060 > .pin1" />
-      <trace from=".BGA > .pin034" to=".TP061 > .pin1" />
-      <trace from=".BGA > .pin011" to=".TP065 > .pin1" />
-      <trace from=".BGA > .pin043" to=".TP066 > .pin1" />
-      <trace from=".BGA > .pin031" to=".TP077 > .pin1" />
-      <trace from=".BGA > .pin016" to=".TP078 > .pin1" />
-      <trace from=".BGA > .pin014" to=".TP080 > .pin1" />
-      <trace from=".BGA > .pin120" to=".TP081 > .pin1" />
-      <trace from=".BGA > .pin018" to=".TP082 > .pin1" />
-      <trace from=".BGA > .pin052" to=".TP088 > .pin1" />
-      <trace from=".BGA > .pin020" to=".TP089 > .pin1" />
-      <trace from=".BGA > .pin041" to=".TP091 > .pin1" />
-      <trace from=".BGA > .pin027" to=".TP093 > .pin1" />
-      <trace from=".BGA > .pin030" to=".TP094 > .pin1" />
+      <trace from=".BGA > .pin009" to=".TP009 > .pin1" />
+      <trace from=".BGA > .pin013" to=".TP013 > .pin1" />
+      <trace from=".BGA > .pin014" to=".TP014 > .pin1" />
+      <trace from=".BGA > .pin016" to=".TP016 > .pin1" />
+      <trace from=".BGA > .pin018" to=".TP018 > .pin1" />
+      <trace from=".BGA > .pin029" to=".TP029 > .pin1" />
+      <trace from=".BGA > .pin030" to=".TP030 > .pin1" />
+      <trace from=".BGA > .pin031" to=".TP031 > .pin1" />
+      <trace from=".BGA > .pin033" to=".TP033 > .pin1" />
+      <trace from=".BGA > .pin035" to=".TP035 > .pin1" />
+      <trace from=".BGA > .pin039" to=".TP039 > .pin1" />
+      <trace from=".BGA > .pin040" to=".TP040 > .pin1" />
+      <trace from=".BGA > .pin041" to=".TP041 > .pin1" />
+      <trace from=".BGA > .pin043" to=".TP043 > .pin1" />
+      <trace from=".BGA > .pin046" to=".TP046 > .pin1" />
+      <trace from=".BGA > .pin060" to=".TP060 > .pin1" />
+      <trace from=".BGA > .pin077" to=".TP077 > .pin1" />
+      <trace from=".BGA > .pin078" to=".TP078 > .pin1" />
+      <trace from=".BGA > .pin081" to=".TP081 > .pin1" />
+      <trace from=".BGA > .pin082" to=".TP082 > .pin1" />
+      <trace from=".BGA > .pin091" to=".TP091 > .pin1" />
+      <trace from=".BGA > .pin095" to=".TP095 > .pin1" />
+      <trace from=".BGA > .pin096" to=".TP096 > .pin1" />
+      <trace from=".BGA > .pin097" to=".TP097 > .pin1" />
+      <trace from=".BGA > .pin098" to=".TP098 > .pin1" />
+      <trace from=".BGA > .pin099" to=".TP099 > .pin1" />
+      <trace from=".BGA > .pin101" to=".TP101 > .pin1" />
+      <trace from=".BGA > .pin102" to=".TP102 > .pin1" />
+      <trace from=".BGA > .pin103" to=".TP103 > .pin1" />
+      <trace from=".BGA > .pin104" to=".TP104 > .pin1" />
+      <trace from=".BGA > .pin106" to=".TP106 > .pin1" />
+      <trace from=".BGA > .pin107" to=".TP107 > .pin1" />
+      <trace from=".BGA > .pin109" to=".TP109 > .pin1" />
+      <trace from=".BGA > .pin110" to=".TP110 > .pin1" />
+      <trace from=".BGA > .pin111" to=".TP111 > .pin1" />
+      <trace from=".BGA > .pin114" to=".TP114 > .pin1" />
+      <trace from=".BGA > .pin115" to=".TP115 > .pin1" />
+      <trace from=".BGA > .pin116" to=".TP116 > .pin1" />
+      <trace from=".BGA > .pin117" to=".TP117 > .pin1" />
+      <trace from=".BGA > .pin118" to=".TP118 > .pin1" />
+      <trace from=".BGA > .pin119" to=".TP119 > .pin1" />
+      <trace from=".BGA > .pin120" to=".TP120 > .pin1" />
+      <trace from=".BGA > .pin121" to=".TP121 > .pin1" />
       <resistor name="R001" footprint="0402" pcbX="2.434mm" pcbY="-0.56mm" pcbRotation={0} layer="top" pcbPositionMode="relative_to_board_anchor" resistance="10k" />
-      <capacitor name="C002" footprint="0402" pcbX="-1.313mm" pcbY="-3.769mm" pcbRotation={0} layer="top" pcbPositionMode="relative_to_board_anchor" capacitance="1uF" />
-      <resistor name="R003" footprint="0603" pcbX="-2.405mm" pcbY="1.607mm" pcbRotation={270} layer="top" pcbPositionMode="relative_to_board_anchor" resistance="1k" />
-      <capacitor name="C004" footprint="0603" pcbX="3.192mm" pcbY="4.332mm" pcbRotation={0} layer="top" pcbPositionMode="relative_to_board_anchor" capacitance="4.7uF" />
-      <resistor name="R005" footprint="0201" pcbX="-4.114mm" pcbY="-4.224mm" pcbRotation={0} layer="top" pcbPositionMode="relative_to_board_anchor" resistance="10k" />
-      <capacitor name="C006" footprint="0603" pcbX="2.63mm" pcbY="-3.951mm" pcbRotation={270} layer="top" pcbPositionMode="relative_to_board_anchor" capacitance="1uF" />
-      <resistor name="R007" footprint="0402" pcbX="0.242mm" pcbY="3.465mm" pcbRotation={90} layer="top" pcbPositionMode="relative_to_board_anchor" resistance="1k" />
+      <capacitor name="C002" footprint="0201" pcbX="-0.96mm" pcbY="2.968mm" pcbRotation={270} layer="top" pcbPositionMode="relative_to_board_anchor" capacitance="1uF" />
+      <resistor name="R003" footprint="0603" pcbX="-4.084mm" pcbY="-1.28mm" pcbRotation={0} layer="top" pcbPositionMode="relative_to_board_anchor" resistance="1k" />
+      <capacitor name="C004" footprint="0402" pcbX="-1.313mm" pcbY="-3.769mm" pcbRotation={0} layer="top" pcbPositionMode="relative_to_board_anchor" capacitance="4.7uF" />
+      <resistor name="R005" footprint="0805" pcbX="4.275mm" pcbY="-3.796mm" pcbRotation={0} layer="top" pcbPositionMode="relative_to_board_anchor" resistance="10k" />
+      <capacitor name="C006" footprint="0603" pcbX="3.192mm" pcbY="4.332mm" pcbRotation={0} layer="top" pcbPositionMode="relative_to_board_anchor" capacitance="1uF" />
+      <resistor name="R007" footprint="0603" pcbX="-4.129mm" pcbY="2.616mm" pcbRotation={0} layer="top" pcbPositionMode="relative_to_board_anchor" resistance="1k" />
+      <capacitor name="C008" footprint="0402" pcbX="-1.022mm" pcbY="-0.8mm" pcbRotation={0} layer="top" pcbPositionMode="relative_to_board_anchor" capacitance="4.7uF" />
+      <trace from=".BGA > .pin075" to=".R001 > .pin1" />
+      <trace from=".R001 > .pin2" to=".TP103 > .pin1" />
+      <trace from=".BGA > .pin027" to=".C002 > .pin1" />
+      <trace from=".C002 > .pin2" to=".TP106 > .pin1" />
+      <trace from=".BGA > .pin079" to=".R003 > .pin1" />
+      <trace from=".R003 > .pin2" to=".TP111 > .pin1" />
+      <trace from=".BGA > .pin104" to=".C004 > .pin1" />
+      <trace from=".C004 > .pin2" to=".TP115 > .pin1" />
+      <trace from=".BGA > .pin099" to=".R005 > .pin1" />
+      <trace from=".R005 > .pin2" to=".TP103 > .pin1" />
+      <trace from=".BGA > .pin022" to=".C006 > .pin1" />
+      <trace from=".C006 > .pin2" to=".TP060 > .pin1" />
+      <trace from=".BGA > .pin001" to=".R007 > .pin1" />
+      <trace from=".R007 > .pin2" to=".TP043 > .pin1" />
+      <trace from=".BGA > .pin061" to=".C008 > .pin1" />
+      <trace from=".C008 > .pin2" to=".TP120 > .pin1" />
   </board>
 )
