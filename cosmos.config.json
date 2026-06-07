@@ -1,0 +1,7 @@
+{
+  "$schema": "http://json.schemastore.org/cosmos-config",
+  "fixtureFileSuffix": "page",
+  "host": "127.0.0.1",
+  "plugins": ["react-cosmos-plugin-vite"],
+  "port": 5000
+}
