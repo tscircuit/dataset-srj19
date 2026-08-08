@@ -3,6 +3,7 @@ node_modules/
 
 # Build output
 dist/
+cosmos-export/
 build/
 
 # Environment variables
