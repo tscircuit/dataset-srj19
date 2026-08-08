@@ -31,3 +31,5 @@ yarn-error.log*
 
 .codex
 .claude
+.vercel
+.env*
