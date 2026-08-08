@@ -21,7 +21,7 @@ type PartialSimpleRouteJson = Partial<SimpleRouteJson> & {
   connections?: SimpleRouteJson["connections"]
 }
 
-const SAMPLE_HASH_PARAM = "sample"
+const SAMPLE_URL_PARAM = "sample"
 
 const clampSampleIndex = (sampleIndex: number) =>
   Math.min(
@@ -29,25 +29,51 @@ const clampSampleIndex = (sampleIndex: number) =>
     manifest.sampleCount - 1,
   )
 
-const getSampleIndexFromHash = () => {
-  if (typeof window === "undefined") return 0
+const getUrlWindow = () => {
+  if (typeof window === "undefined") return null
 
-  const hashParams = new URLSearchParams(window.location.hash.slice(1))
-  const sampleNumber = Number(hashParams.get(SAMPLE_HASH_PARAM))
+  try {
+    if (
+      window.parent !== window &&
+      window.parent.location.origin === window.location.origin
+    ) {
+      return window.parent
+    }
+  } catch {
+    // Fall back to the fixture window when the parent is not same-origin.
+  }
+
+  return window
+}
+
+const getSampleIndexFromUrl = () => {
+  const urlWindow = getUrlWindow()
+  if (!urlWindow) return 0
+
+  const url = new URL(urlWindow.location.href)
+  const querySample = url.searchParams.get(SAMPLE_URL_PARAM)
+  const hashSample = new URLSearchParams(url.hash.slice(1)).get(
+    SAMPLE_URL_PARAM,
+  )
+  const sampleNumber = Number(querySample ?? hashSample)
 
   if (!Number.isFinite(sampleNumber)) return 0
   return clampSampleIndex(sampleNumber - 1)
 }
 
-const setSampleIndexInHash = (sampleIndex: number) => {
-  if (typeof window === "undefined") return
+const setSampleIndexInUrl = (
+  sampleIndex: number,
+  mode: "pushState" | "replaceState",
+) => {
+  const urlWindow = getUrlWindow()
+  if (!urlWindow) return
 
-  const url = new URL(window.location.href)
-  const hashParams = new URLSearchParams(url.hash.slice(1))
-  hashParams.set(SAMPLE_HASH_PARAM, String(sampleIndex + 1))
-  url.hash = hashParams.toString()
+  const url = new URL(urlWindow.location.href)
+  const sampleValue = String(sampleIndex + 1)
+  if (url.searchParams.get(SAMPLE_URL_PARAM) === sampleValue) return
 
-  window.history.replaceState(window.history.state, "", url)
+  url.searchParams.set(SAMPLE_URL_PARAM, sampleValue)
+  urlWindow.history[mode](urlWindow.history.state, "", url)
 }
 
 const isBgaPadObstacle = (obstacle: SrjObstacle) =>
@@ -559,29 +585,41 @@ const getGraphicsForSrj = (srj: SimpleRouteJson): GraphicsObject => {
 
 export default function DatasetPage() {
   const [selectedSampleIndex, setSelectedSampleIndex] = useState(
-    getSampleIndexFromHash,
+    getSampleIndexFromUrl,
   )
   const [selectedSample, setSelectedSample] = useState<SimpleRouteJson | null>(
     null,
   )
   const [loadError, setLoadError] = useState<string | null>(null)
 
-  useEffect(() => {
-    const syncSelectedSampleFromHash = () => {
-      setSelectedSampleIndex(getSampleIndexFromHash())
-    }
-
-    window.addEventListener("hashchange", syncSelectedSampleFromHash)
-    return () =>
-      window.removeEventListener("hashchange", syncSelectedSampleFromHash)
-  }, [])
-
-  useEffect(() => {
-    setSampleIndexInHash(selectedSampleIndex)
-  }, [selectedSampleIndex])
-
   const selectedSampleMeta =
     manifest.samples[selectedSampleIndex] ?? manifest.samples[0]
+
+  useEffect(() => {
+    setSampleIndexInUrl(selectedSampleIndex, "replaceState")
+
+    const urlWindow = getUrlWindow()
+    if (!urlWindow) return
+
+    const syncSelectedSampleFromUrl = () => {
+      setSelectedSampleIndex(getSampleIndexFromUrl())
+    }
+
+    urlWindow.addEventListener("popstate", syncSelectedSampleFromUrl)
+    urlWindow.addEventListener("hashchange", syncSelectedSampleFromUrl)
+    return () => {
+      urlWindow.removeEventListener("popstate", syncSelectedSampleFromUrl)
+      urlWindow.removeEventListener("hashchange", syncSelectedSampleFromUrl)
+    }
+  }, [])
+
+  const selectSampleIndex = (sampleIndex: number) => {
+    const nextIndex = clampSampleIndex(sampleIndex)
+    if (nextIndex === selectedSampleIndex) return
+
+    setSelectedSampleIndex(nextIndex)
+    setSampleIndexInUrl(nextIndex, "pushState")
+  }
 
   useEffect(() => {
     let cancelled = false
@@ -693,17 +731,16 @@ export default function DatasetPage() {
             max={manifest.sampleCount}
             value={selectedSampleIndex + 1}
             onChange={(event: ChangeEvent<HTMLInputElement>) => {
-              setSelectedSampleIndex(
-                clampSampleIndex(Number(event.currentTarget.value) - 1),
-              )
+              const sampleNumber = event.currentTarget.valueAsNumber
+              if (Number.isFinite(sampleNumber)) {
+                selectSampleIndex(sampleNumber - 1)
+              }
             }}
           />
         </label>
         <button
           disabled={selectedSampleIndex === 0}
-          onClick={() =>
-            setSelectedSampleIndex((index) => Math.max(index - 1, 0))
-          }
+          onClick={() => selectSampleIndex(selectedSampleIndex - 1)}
           style={{
             border: "1px solid #cbd5e1",
             borderRadius: 4,
@@ -717,11 +754,7 @@ export default function DatasetPage() {
         </button>
         <button
           disabled={selectedSampleIndex === manifest.sampleCount - 1}
-          onClick={() =>
-            setSelectedSampleIndex((index) =>
-              Math.min(index + 1, manifest.sampleCount - 1),
-            )
-          }
+          onClick={() => selectSampleIndex(selectedSampleIndex + 1)}
           style={{
             border: "1px solid #cbd5e1",
             borderRadius: 4,
