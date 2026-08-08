@@ -24,9 +24,11 @@
   ],
   "scripts": {
     "build": "tsci build circuits/sample001/sample001.circuit.tsx",
+    "build:site": "cosmos-export && node scripts/copy-cosmos-assets.mjs",
     "snapshot": "tsci snapshot circuits/sample001/sample001.circuit.tsx",
     "snapshot:update": "tsci snapshot circuits/sample001/sample001.circuit.tsx --update",
     "generate": "node scripts/generate-passive-overlay-dataset.mjs",
+    "generate:readme-image": "bun scripts/generate-readme-image.mjs",
     "build:dataset-dist": "bun scripts/build-dataset-dist.mjs",
     "test": "bun test",
     "start": "cosmos",
@@ -38,8 +40,10 @@
     "@types/react": "^19.2.14",
     "bun-match-svg": "^0.0.11",
     "graphics-debug": "^0.0.94",
+    "react": "^19.2.4",
     "react-cosmos": "^7.3.0",
     "react-cosmos-plugin-vite": "^7.3.0",
+    "react-dom": "^19.2.4",
     "tscircuit": "^0.0.1672",
     "typescript": "^5.0.0",
     "vite": "^8.0.12"

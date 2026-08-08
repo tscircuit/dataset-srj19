@@ -3,6 +3,7 @@ node_modules/
 
 # Build output
 dist/
+cosmos-export/
 build/
 
 # Environment variables
@@ -30,3 +31,5 @@ yarn-error.log*
 
 .codex
 .claude
+.vercel
+.env*

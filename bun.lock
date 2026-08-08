@@ -1,5 +1,6 @@
 {
   "lockfileVersion": 1,
+  "configVersion": 0,
   "workspaces": {
     "": {
       "name": "@tsci/tscircuit.dataset-srj19-bga-passive-overlays",
@@ -8,8 +9,10 @@
         "@types/react": "^19.2.14",
         "bun-match-svg": "^0.0.11",
         "graphics-debug": "^0.0.94",
+        "react": "^19.2.4",
         "react-cosmos": "^7.3.0",
         "react-cosmos-plugin-vite": "^7.3.0",
+        "react-dom": "^19.2.4",
         "tscircuit": "^0.0.1672",
         "typescript": "^5.0.0",
         "vite": "^8.0.12",
